@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2014-10-18 18:31:40
 * @Last Modified by:   anchen
-* @Last Modified time: 2014-10-21 14:12:56
+* @Last Modified time: 2014-10-21 14:37:34
 */
 
 * {
@@ -28,20 +28,20 @@ ul {
     left: 0;
     top: 0;
     right: 0;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    -ms-transition: 0.5s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -o-transition: 0.7s;
+    -ms-transition: 0.7s;
 }
 #at-plus-container:hover {
     background-image: url("assets/images/atplus_green.png");
     background-color: rgba(48, 63, 159, 1);
     width: 4em;
     height: 4em;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    -ms-transition: 0.5s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -o-transition: 0.7s;
+    -ms-transition: 0.7s;
 }
 #bottom-positioner {
     width: 0em;
@@ -50,10 +50,10 @@ ul {
     bottom: 1.25em;
     right: 1.25em;
     opacity: 0.0;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    -ms-transition: 0.5s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -o-transition: 0.7s;
+    -ms-transition: 0.7s;
 }
 #at-plus-container:hover > * {
     width: 12em;
@@ -125,21 +125,25 @@ ul {
 }
 .history {
     background-image: url("assets/images/history.png");
+    text-align: center;
     bottom: 37%;
     right: 80%;
 }
 .message {
     background-image: url("assets/images/message.png");
+    text-align: center;
     bottom: 17%;
     right: 69%;
 }
 .setting {
     background-image: url("assets/images/setting.png");
+    text-align: center;
     bottom: 5%;
     right: 49%;
 }
 .sign {
     background-image: url("assets/images/signout.png");
+    text-align: center;
     bottom: 6%;
     right: 26%;
 }
