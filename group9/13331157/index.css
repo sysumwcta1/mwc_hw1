@@ -1,0 +1,208 @@
+div#at-plus-container {
+	position: absolute;
+	top: 200px;
+	left: 800px;
+}
+div#button {
+    width: 30px;
+    height: 30px;
+    background: rgba(155, 155, 212, 1);
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background-image: url("assets/images/atplus_white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    transition: width 1s 0.6s, height 1s 0.6s, border-radius 1s 0.6s,
+                background-image 1s 0.6s, background 1s 0.6s;
+    -moz-transition: width 1s 0.6s, height 1s 0.6s, border-radius 1s 0.6s,
+                background-image 1s 0.6s, background 1s 0.6s;
+    -webkit-transition:width 1s 0.6s, height 1s 0.6s, border-radius 1s 0.6s,
+                background-image 1s 0.6s, background 1s 0.6s;
+}
+div#button #control-ring-container #control-ring  {
+    visibility:hidden;
+    transition: visibility 1s 0.5s, opacity 1s 0.5s;
+    -moz-transition: visibility 1s 0.5s, opacity 1s 0.5s;
+    -webkit-transition: visibility 1s 0.5s, opacity 1s 0.5s;
+    opacity: 0;
+    height: 0;
+}
+div#button:hover {
+    width: 60px;
+    height: 60px;
+    background: rgba(48,63,159,1);
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background-image: url("assets/images/atplus_green.png");
+    background-size: 40px, 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#button #info-bar .info {
+    width: 130px;
+    height: 130px;
+    -moz-border-radius: 65px;
+    -webkit-border-radius: 65px;
+    border-radius: 65px;
+    background: rgba(125, 125, 125, 1);
+    position: relative;
+    bottom: 40px;
+    right: 40px;
+    visibility:hidden;
+    transition: visibility 1s 0.5s, opacity 1s 0.5s, transform 1s 0.5s;
+    -moz-transition: visibility 1s 0.5s, opacity 1s 0.5s, transform 1s 0.5s;
+    -webkit-transition: visibility 1s 0.5s, opacity 1s 0.5s, transform 1s 0.5s;
+    opacity: 0;
+}
+div#button:hover #info-bar .info {
+    visibility:visible;
+    opacity: 1;
+    transform: translate(0px, -120px);
+    -moz-transform: translate(0px, -120px);
+    -webkit-transform: translate(0px, -120px);
+}
+div.info ul li {
+	font-family: Arial;
+}
+div.info ul li.page-user {
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+    right: 2px;
+}
+div.info ul li.page-user span {
+	color: white;
+	font-size: 15pt;
+	font-weight: bold;
+	position: relative;
+	left: 5px
+}
+div.info ul li.page-comment {
+    margin-left: 0px;
+    position: relative;
+    top: 10px;
+}
+div.info ul li.page-comment span {
+	color: white;
+	font-size: 25pt;
+	font-weight: bold;
+	position: relative;
+	left: 10px
+}
+div.info ul li.mine-posted {
+    float: left;
+    margin-left: -20px;
+    position: relative;
+    top: 15px;
+    left: 5px;
+}
+div.info ul li.mine-posted span {
+	color: #079E6E;
+	font-size: 15pt;
+	font-weight: bolder;
+	position: relative;
+	left: 5px;
+	top: -5px;
+}
+div.info ul li.mine-like {
+    margin-left: -20px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+div.info ul li.mine-like span {
+	color: #079E6E;
+	font-size: 15pt;
+	font-weight: bolder;
+	position: relative;
+	left: 5px;
+	top: -6px;
+}
+div.info ul {
+	list-style: none;
+}
+ul#control-ring li {
+    width: 40px;
+    height: 40px;
+    background: rgba(125, 125, 125, 1);
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    list-style: none;
+    position: relative;
+}
+ul#control-ring li.button {
+    right: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+    transition: transform 1s 0.5s;
+    -moz-transition: transform 1s 0.5s;
+    -webkit-transition: transform 1s 0.5s;
+}
+ul#control-ring li.mask {
+	background-image: url("assets/images/mask.png");
+    bottom: 150px;
+}
+ul#control-ring li.history {
+	background-image: url("assets/images/history.png");
+    bottom: 190px;
+}
+ul#control-ring li.message {
+	background-image: url("assets/images/message.png");
+    bottom: 230px;
+}
+ul#control-ring li.message span.unread {
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+	width: 18px;
+	height: 18px;
+	background-color: red;
+	-moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    text-align: center;
+    float: right;
+}
+ul#control-ring li.setting {
+	background-image: url("assets/images/setting.png");
+    bottom: 270px;
+}
+ul#control-ring li.sign {
+	background-image: url("assets/images/signin.png");
+    bottom: 310px;
+}
+div#button:hover #control-ring-container #control-ring {
+    visibility:visible;
+    opacity: 1;
+    height: auto;
+}
+div#button:hover #control-ring-container #control-ring li.mask {
+    transform: translate(-60px, -40px);
+    -moz-transform: translate(-60px, -40px);
+    -webkit-transform: translate(-60px, -40px);
+}
+div#button:hover #control-ring-container #control-ring li.history {
+    transform: translate(-80px, 0px);
+    -moz-transform: translate(-80px, 0px);
+    -webkit-transform: translate(-80px, 0px);
+}
+div#button:hover #control-ring-container #control-ring li.message {
+    transform: translate(-60px, 40px);
+    -moz-transform: translate(-60px, 40px);
+    -webkit-transform: translate(-60px, 40px);
+}
+div#button:hover #control-ring-container #control-ring li.setting {
+    transform: translate(-20px, 80px);
+    -moz-transform: translate(-20px, 80px);
+    -webkit-transform: translate(-20px, 80px);
+}
+div#button:hover #control-ring-container #control-ring li.sign {
+    transform: translate(40px, 70px);
+    -moz-transform: translate(40px, 70px);
+    -webkit-transform: translate(40px, 70px);
+}
