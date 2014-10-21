@@ -1,0 +1,116 @@
+.icon {
+  background-image: url("assets/images/atplus_white.png");
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  top: 350px;
+}
+
+.icon:hover {
+  padding: 0px;
+  background-image: url("assets/images/atplus_green.png");
+  background-repeat: no-repeat;
+  background-color: blue;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin: 0 auto;
+  position: relative;
+  top: 320px;
+}
+
+#control-ring {
+  position: relative;
+  margin: 0 auto;
+  top: 380px;
+  width: 100px;
+  list-style: none;
+}
+
+#control-ring li {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.button {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  -webkit-transform-origin:250% -100%;
+  -moz-transform-origin:250% -100%;
+  -ms-transform-origin:250% -100%;
+  -webkit-transition:-webkit-transform 2s;
+  -moz-transition:-moz-transform 2s;
+  -ms-transition:-ms-transform 2s;
+}
+
+.mask {
+  background-image: url("assets/images/mask.png");
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+}
+
+#button:hover .mask {
+  visibility: visible;
+  -webkit-transform:rotate(25deg);
+  -moz-transform:rotate(25deg);
+  -ms-transform:rotate(25deg);
+}
+
+.history {
+  background-image: url("assets/images/history.png");
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+}
+
+#button:hover .history {
+  visibility: visible;
+  -webkit-transform:rotate(50deg);
+  -moz-transform:rotate(50deg);
+  -ms-transform:rotate(50deg);
+}
+
+.message {
+  background-image: url("assets/images/message.png");
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+}
+
+#button:hover .message {
+  visibility: visible;
+  -webkit-transform:rotate(75deg);
+  -moz-transform:rotate(75deg);
+  -ms-transform:rotate(75deg);
+}
+
+.setting {
+  background-image: url("assets/images/setting.png");
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+}
+
+#button:hover .setting {
+  visibility: visible;
+  -webkit-transform:rotate(100deg);
+  -moz-transform:rotate(100deg);
+  -ms-transform:rotate(100deg);
+}
+
+.sign {
+  background-image: url("assets/images/signin.png");
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+}
+
+#button:hover .sign {
+  visibility: visible;
+  -webkit-transform:rotate(125deg);
+  -moz-transform:rotate(125deg);
+  -ms-transform:rotate(125deg);
+}
