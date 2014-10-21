@@ -1,0 +1,215 @@
+div#at-plus-container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+div#button {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: rgb(104,104,104);
+	background-image: url(assets/images/atplus_white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: -webkit-transform 1s, width 1s, height 1s, border-radius 1s, background-image 1s;
+}
+
+div.info {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	background-color: rgb(104, 104, 104);
+	visibility: hidden;
+	right: 50px;
+	bottom: 50px;
+	opacity: 0;
+	transition: -webkit-transform 0.6s, visibility 2s, opacity 2s;
+}
+
+div.info ul li {
+	font-weight: bold;
+}
+
+li {
+	list-style: none;
+}
+
+.user, .comment {
+	color: white;
+}
+
+.comment {
+	font-size: 30pt;
+}
+
+.posted {
+	color: #079E6E;
+	float: left;
+	right: 20px;
+	position: relative;
+	right: 20px;
+}
+
+li#a span {
+	position: relative;
+	left: 5px;
+	bottom: 5px;
+}
+
+li#b span {
+	position: relative;
+	left: 8px;
+	bottom: 8px;
+}
+
+.like {
+	color: #079E6E;
+}
+
+li.mask {
+	background-image: url(assets/images/mask.png);
+	background-repeat: no-repeat;
+	background-color: rgb(104, 104, 104);
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	position: relative;
+	right: 45px;
+	bottom: 110px;
+	opacity: 0;
+	transition: -webkit-transform 0.8s, opacity 0.9s;
+}
+
+li.history {
+	background-image: url(assets/images/history.png);
+	background-repeat: no-repeat;
+	background-color: rgb(104, 104, 104);
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	position: relative;
+	right: 45px;
+	bottom: 170px;
+	opacity: 0;
+	transition: -webkit-transform 1.0s, opacity 0.9s;
+}
+
+li.message {
+	background-image: url(assets/images/message.png);
+	background-repeat: no-repeat;
+	background-color: rgb(104, 104, 104);
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	position: relative;
+	right: 45px;
+	bottom: 200px;
+	opacity: 0;
+	transition: -webkit-transform 1.2s, opacity 0.9s;
+}
+
+li.setting {
+	background-image: url(assets/images/setting.png);
+	background-repeat: no-repeat;
+	background-color: rgb(104, 104, 104);
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	position: relative;
+	right: 45px;
+	bottom: 240px;
+	opacity: 0;
+	transition: -webkit-transform 1.4s, opacity 0.9s;
+}
+
+li.sign {
+	background-image: url(assets/images/signin.png);
+	background-repeat: no-repeat;
+	background-color: rgb(104, 104, 104);
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	position: relative;
+	right: 40px;
+	bottom: 260px;
+	opacity: 0;
+	transition: -webkit-transform 1.6s, opacity 0.9s;
+}
+
+li.message span.unread {
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background-color: red;
+	float: right;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	left: 5px;
+	bottom: 5px;
+}
+
+ul#control-ring {
+	visibility: hidden;
+}
+
+div#button:hover {
+	background-image: url(assets/images/atplus_green.png);
+	background-color: rgba(48, 63, 159, 1);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	-webkit-transform: translate(-25px, -25px);
+}
+
+div#button:hover #info-bar .info {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate(18px, -100px);
+    transform: translate(18px, -100px);
+}
+
+div#button:hover #control-ring-container #control-ring li.mask {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translate(-60px, -60px);
+    transform: translate(-60px, -60px);
+}
+
+div#button:hover #control-ring-container #control-ring .history {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translate(-70px, 0);
+    transform: translate(-70px, 0);
+}
+
+div#button:hover #control-ring-container #control-ring .message {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translate(-55px, 30px);
+    transform: translate(-55px, 30px);
+}
+
+div#button:hover #control-ring-container #control-ring .setting {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translate(-30px,70px);
+	transform: translate(-30px,70px);
+}
+
+div#button:hover #control-ring-container #control-ring .sign {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translate(10px, 85px);
+    transform: translate(10px, 85px);
+}
