@@ -1,0 +1,222 @@
+#bottom-positioner{
+	background-image:url("assets/images/atplus_white.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(136,136,136,1);
+	border:1px solid #888888;
+	position:fixed;
+	top:75%;
+	left:50%;
+	width: 2em;
+	height: 2em;
+	overflow: hidden;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+	transition:all 1s linear 0.5s;
+	-webkit-transition-radius:all 1s linear 0.5s;
+}
+#bottom-positioner:hover{
+	background-image:url("assets/images/atplus_green.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(48, 63, 159, 1);
+	border:1px solid rgba(48, 63, 159, 1);
+	position:fixed;
+	top:73%;
+	left:48%;
+	width: 4.5em;
+	height: 4.5em;
+	overflow:visible;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+}
+#bottom{
+	position: absolute;
+}
+#infor-bar{
+	position: absolute;
+}
+.info{
+	opacity: 0;
+	position: relative;
+	width: 4px;
+	height:4px;
+	border:1px solid rgba(136,136,136,1);
+	border-radius: 50%;
+	transition:all 1s linear 0.5s;
+	-webkit-transition-radius:all 1s linear 0.5s;
+}
+#bottom-positioner:hover div.info{
+	opacity: 1;
+	background-color: rgba(136,136,136,1);
+	border:1px solid rgba(136,136,136,1);
+	position: absolute;
+	top: -230%;
+	left: -50%;
+	width:150px;
+	height: 150px;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+}
+ul{
+	list-style-type: none;
+}
+li.page-user > img{
+	margin-right: 10px; 
+}
+li.page-user > span{
+	font-size: 150%;
+	font-weight: bold;
+	color: white;
+}
+li.page-comment > img{
+	margin-right: 10px;
+}
+li.page-comment > span{
+	font-size: 180%;
+	font-weight: bold;
+	color: white;
+}
+li.mine-posted{
+	display: inline;
+	-webkit-display:inline;
+}
+li.mine-posted > img{
+	position: relative;
+	left: -10%;
+}
+li.mine-posted > span{
+	font-size: 120%;
+	font-weight: bold;
+	color: rgba(192,192,192,1);
+	position: relative;
+	left: -4%;
+}
+li.mine-like{
+	display: inline;
+	-webkit-display:inline;
+}
+li.mine-like > img{
+	margin-right: 5px;
+}
+li.mine-like >span{
+	font-size: 120%;
+	font-weight: bold;
+	color: rgba(192,192,192,1);
+}
+#control-ring{
+	list-style-type: none;
+}
+li.mask-button{
+	opacity: 0;
+	position: absolute;
+	transition:all 1s linear 0.5s;
+	-webkit-transition-radius:all 1s linear 0.5s;
+}
+#bottom-positioner:hover li.mask-button{
+	background-image: url("assets/images/nomask.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(136,136,136,1);
+	border:1px solid rgba(136,136,136,1);
+	border-radius: 50%;
+	width:50px;
+	height: 50px;
+	position: absolute;
+	top: -50%;
+	left: -100%;
+	opacity: 1;
+}
+li.history-button{
+	opacity: 0;
+	position: absolute;
+	transition:all 1s linear 0.5s;
+	-webkit-transition-radius:all 1s linear 0.5s;
+}
+#bottom-positioner:hover li.history-button{
+	background-image: url("assets/images/history.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(136,136,136,1);
+	border:1px solid rgba(136,136,136,1);
+	border-radius: 50%;
+	width:50px;
+	height: 50px;
+	position: absolute;
+	top: 30%;
+	left: -140%;
+	opacity: 1;
+}
+li.message-button{
+	opacity: 0;
+	position: absolute;
+	transition:all 1s linear 0.5s;
+	-webkit-transition-radius:all 1s linear 0.5s;
+}
+#bottom-positioner:hover li.message-button{
+	background-image: url("assets/images/message.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(136,136,136,1);
+	border:1px solid rgba(136,136,136,1);
+	border-radius: 50%;
+	width:50px;
+	height: 50px;
+	position: absolute;
+	top: 100%;
+	left: -90%;
+	opacity: 1;
+}
+span.unread{
+	background-color: red;
+	text-align: center;
+	display: inline-block;
+	-webkit-display: inline-block;
+	font-size: 120%;
+	border: 1px solid red;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: relative;
+	left: 70%;
+}
+li.setting-button{
+	opacity: 0;
+	position: absolute;
+	transition:all 1s linear 0.5s;
+	-webkit-transition-radius:all 1s linear 0.5s;
+}
+#bottom-positioner:hover li.setting-button{
+	background-image: url("assets/images/setting.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(136,136,136,1);
+	border:1px solid rgba(136,136,136,1);
+	border-radius: 50%;
+	width:50px;
+	height: 50px;
+	position: absolute;
+	top: 160%;
+	left: -20%;
+	opacity: 1;
+}
+li.sign-button{
+	opacity: 0;
+	position: absolute;
+	transition:all 1s linear 0.5s;
+	-webkit-transition-radius:all 1s linear 0.5s;
+}
+#bottom-positioner:hover li.sign-button{
+	background-image: url("assets/images/signin.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(136,136,136,1);
+	border:1px solid rgba(136,136,136,1);
+	border-radius: 50%;
+	width:50px;
+	height: 50px;
+	position: absolute;
+	top: 120%;
+	left: 80%;
+	opacity: 1;
+}
