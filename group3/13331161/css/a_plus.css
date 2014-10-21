@@ -1,0 +1,300 @@
+body {
+	background-color: #404040;
+	color: #FFFFFF;
+	width: 60%;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.container {
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	top: 194px;
+	left: 300px;
+}
+
+.container:hover {
+	position: absolute;
+	top: 154px;
+	left: 250px;
+	width: 150px;
+	height: 150px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.container_2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.container:hover .container_2 {
+	position: absolute;
+	top: 40px;
+	left: 50px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.container:hover .a_plus {
+	width: 46px;
+	height: 46px;
+	border-radius: 23px;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.container:hover .a_plus img {
+	position: absolute;
+	top: 2px;
+}
+
+.container:hover .welcome {
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: -100px;
+	left: -30px;
+	opacity: 1;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.container:hover .welcome ul {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.container_2 > div:hover {
+	background-color: #00FF33;
+}
+
+.container:hover .nomask {
+	position: absolute;
+	top: -20px;
+	left: -45px;
+	opacity: 1;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.container:hover .history {
+	position: absolute;
+	top: 20px;
+	left: -45px;
+	opacity: 1;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.container:hover .message {
+	position: absolute;
+	top: 50px;
+	left: -25px;
+	opacity: 1;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.container:hover .setting {
+	position: absolute;
+	top: 50px;
+	left: 15px;
+	opacity: 1;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.container:hover .signin {
+	position: absolute;
+	top: 35px;
+	left: 50px;
+	opacity: 1;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+
+.a_plus {
+	background-color: #585858;
+	opacity: 0.4;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.nomask, .history, .message, .setting, .signin {
+	background-color: #585858;
+	opacity: 0.9;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.a_plus a, .nomask a, .history a, .setting a, .signin a {
+	display: block;
+	width: 90%;
+	overflow: hidden;
+}
+
+.a_plus img {
+	display: block;
+	width: 90%;
+	padding: 7px 0 0 4px;
+
+}
+
+.welcome {
+	background-color: #585858;
+	opacity: 0.9;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 45px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.welcome a {
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.welcome ul {
+	width: 30px;
+	height: 30px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.welcome ul {
+	display: none;
+}
+
+.welcome li#people {
+	padding-left: 4px;
+	text-align: center;
+}
+
+.welcome li#people span {
+	color: #FFFFFF;
+	font-family: "Arial Black", Gadget, sans-serif;
+	width: 90%;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+.welcome li#comment {
+	text-align: center;
+	padding-left: 4px;
+}
+
+.welcome li#comment span {
+	color: #FFFFFF;
+	font-family: "Arial Black", Gadget, sans-serif;
+	padding-left: 10px;
+	font-size: 20px;
+}
+
+
+.welcome li#post {
+	float: left;
+	position: relative;
+	width: 22%;
+	padding-left: 9px;
+}
+
+.welcome li#post span {
+	color: #00CC66;
+	font-family: "Arial Black", Gadget, sans-serif;
+	position: absolute;
+	font-size: 12px;
+	top: 4px;
+	left: 33px;
+}
+
+
+.welcome li#like {
+	float: left;
+	position: relative;
+	margin-left: 17px;
+}
+
+.welcome li#like span {
+	color: #00CC66;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 12px;
+	position: absolute;
+	top: 3px;
+	left: 28px;
+}
+
+.nomask img, .history img, .setting img, .signin img {
+	display: block;
+	width: 60%;
+	padding: 7px 0 0 7px;
+}
+
+.message a {
+	position: relative;
+	text-decoration: none;
+}
+
+.message img {
+	width: 50%;
+	padding:8px 0 0 7px;
+}
+
+.message span {
+	text-align: center;
+	background-color: #FF5C33;
+	color: #FFFFFF;
+	width: 18px;
+	height: 18px;
+	border-radius: 8px;
+	position: absolute;
+	top: -13px;
+	left: 21px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+
