@@ -1,0 +1,301 @@
+/*
+*    Filename: index.css
+*    Description: So hard!
+*    Last modified: 2014-10-21 14:12
+*
+*    Created by 陈炜健 on 2014-10-19
+*    Student ID: 13331018
+*    Email: eleveneat@gmail.com
+*    Copyright (C) 2014 All rights reserved.
+*/
+
+body {
+}
+
+#at-plus-container {
+	width: 100%;
+	height: 0px;
+	position: fixed;
+	bottom: 300px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#bottom-positioner {
+	height: 300px;
+	width: 100%;
+	position: fixed;
+	text-align: center;
+}
+
+#button {
+	width: 27px;
+	height: 27px;
+	margin: auto;
+	position: relative;
+	top: 106px;
+}
+#button:hover {
+	width: 280px;
+	height: 280px;
+	position: relative;
+	top: 0px;
+}
+
+
+/* info-bar */
+#info-bar {
+	transition-property:   background-color;
+	-webkit-transition-property:   background-color;
+	transition-duration: 1s;
+	-webkit-transition-duration: 1s;
+	width: 1px;
+	height: 1px;
+	visibility: hidden;
+	overflow: hidden;
+	display: inline-block;
+}
+#button:hover #info-bar {
+	width: 115px;
+	height: 115px;
+	position: absolute;
+	left: 85px;
+	top:0px;
+	visibility: visible;
+	border-radius: 60px;
+	background-color: rgba(127, 127, 127, 1);
+}
+#info-bar li {
+	display: inline-block;
+}
+.info {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+#button:hover .info {
+	width: 115px;
+	height: 115px;
+	border-radius: 60px;
+	overflow: hidden;
+}
+.page-user {
+	position: absolute;
+	left:38px;
+	top: 15px;
+}
+.page-user span {
+	position: absolute;
+	left: 30px;
+	color: white;
+}
+.page-comment {
+	position: absolute;
+	left:30px;
+	top: 42px;
+}
+.page-comment span {
+	position: absolute;
+	left: 30px;
+	top:-7px;
+	color: white;
+	font-size: 30px;
+}
+.mine-posted {
+	position: absolute;
+	left:15px;
+	top: 70px;
+}
+.mine-posted span {
+	position: absolute;
+	left: 25px;
+	color: rgba(39, 217, 133, 1);
+}
+.mine-plike {
+	position: absolute;
+	left:60px;
+	top: 70px;
+}
+.mine-plike span {
+	position: absolute;
+	left: 30px;
+	color: rgba(39, 217, 133, 1);
+}
+
+
+/* control ring container */
+#control-ring-container {
+	width: 1px;
+	height: 1px;
+	visibility: hidden;
+	overflow: hidden;
+	display: inline-block;
+}
+#button:hover #control-ring-container {
+	position: relative;
+	right: 20px;
+	top:92px;
+	visibility: visible;
+	width:140px;
+	height: 140px;
+}
+#control-ring-container li {
+	display: inline-block;
+}
+
+ .mask-button {
+	transition-property: background-color;
+	-webkit-transition-property: background background-color;
+	transition-duration: 2s;
+	-webkit-transition-duration: 2s;
+}
+#button:hover .mask-button {
+	width: 32px;
+	height: 32px;
+	border-radius: 20px;
+	background-color: rgba(86,86,86,1);
+	position: relative;
+	top: -6px;
+	right: 32px;
+}
+.mask-button img {
+	position: relative;
+	top:4px;
+}
+.history-button {
+	transition-property: background-color;
+	-webkit-transition-property: background-color;
+	transition-duration: 2s;
+	-webkit-transition-duration: 2s;
+}
+#button:hover .history-button {
+	width: 32px;
+	height: 32px;
+	border-radius: 17px;
+	background-color: rgba(86,86,86,1);
+	position: relative;
+	top: 28px;
+	right: 82px;
+}
+.history-button img {
+	position: relative;
+	top: 4px;
+}
+.message-button {
+	transition-property: background-color;
+	-webkit-transition-property: background-color;
+	transition-duration: 2s;
+	-webkit-transition-duration: 2s;
+}
+#button:hover .message-button {
+	width: 32px;
+	height: 32px;
+	border-radius: 17px;
+	background-color: rgba(86,86,86,1);
+	position: relative;
+	top: 28px;
+	right: 28px;
+}
+.message-button img {
+	position: relative;
+	top:4px;
+	left: 0px;
+}
+.unread {
+	transition-property: background-color;
+	-webkit-transition-property: background-color;
+	transition-duration: 2s;
+	-webkit-transition-duration: 2s;
+}
+#button:hover .unread {
+	position: absolute;
+	bottom: 20px;
+	left: 18px;
+	background-color: red;
+	color: white;
+	border-radius: 17px;
+	overflow: hidden;
+}
+.setting-button {
+	transition-property: background-color;
+	-webkit-transition-property: background-color;
+	transition-duration: 2s;
+	-webkit-transition-duration: 2s;
+}
+#button:hover .setting-button {
+	width: 32px;
+	height: 32px;
+	border-radius: 17px;
+	background-color: rgba(86,86,86,1);
+	position: relative;
+	top: 49px;
+	right: 32px;
+}
+.setting-button img {
+	position: relative;
+	top:4px;
+}
+.sign-button {
+	transition-property: background-color;
+	-webkit-transition-property: background-color;
+	transition-duration: 2s;
+	-webkit-transition-duration: 2s;
+}
+#button:hover .sign-button {
+	width: 32px;
+	height: 32px;
+	border-radius: 17px;
+	background-color: rgba(86,86,86,1);
+	position: relative;
+	top: 15px;
+	right: -24px;
+}
+.sign-button img {
+	position: relative;
+	top:4px;
+}
+
+/* atplus */
+.apb {
+	width: 23px;
+	height: 23px;
+	background-color: rgb(152, 159, 213);
+	border-radius:25px;
+	padding: 2px;
+	transition-property: background width height background-color;
+	-webkit-transition-property: background width height background-color;
+	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	margin: auto;
+}
+#button:hover .apb{
+	width: 42px;
+	height: 42px;
+	background-color: rgba(48, 63, 159, 1);
+	border-radius:25px;
+	position: relative;
+	bottom: 20px;
+}
+.icon {
+	width: 23px;
+	height: 23px;
+	border-radius: 25px;
+	padding: 2px;
+	transition-property: background width height background-size；
+	-webkit-transition-property: background width height background-size;
+	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	background: url(assets/images/atplus_white.png) no-repeat;
+	background-size: 20px 20px;
+	background-position: 30%, 30%;
+}
+#button:hover .icon{
+	width: 42px;
+	height: 42px;
+	border-radius: 25px;
+	background: url(assets/images/atplus_green.png) no-repeat;
+	background-size: 32px 28px;
+	background-position: 50%, 50%;
+}
+
