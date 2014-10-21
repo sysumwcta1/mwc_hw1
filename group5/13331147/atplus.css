@@ -1,0 +1,182 @@
+body {
+   background-color: #C0C0C0;
+}
+/* 设置初始@+ */ 
+#button {
+	background-color: #808069;
+	width: 40px;
+	height: 40px;
+	border-radius: 108em; /* 圆角边框 */
+	margin-left: -25px; /* 设置左边距 */
+	position: fixed;
+	bottom: 50px;
+	left: 50%; /*居中 */
+}
+#button:hover {
+	width: 55px;
+	height: 55px;
+	background-color: rgba(48, 63, 159, 1);
+    margin-left: -25px;
+    z-index: -3; /* 决定层叠顺序 */
+    -webkit-transition: all 0.4s; /* Firefox 4 */
+    -moz-transition: all 0.4s; /* Safari 和 Chrome */
+    transition: all 0.4s; /* Opera */
+}
+/* 下面是info-bar的操作*/
+.info {
+	width: 50px;
+	height: 50px;
+	bottom: 72px;
+	left: 50%;
+	border-radius: 99em;
+	background-color: #808069;
+	margin-left: -55px;
+	position: fixed;
+	opacity: 0.0;
+	overflow: hidden;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.info:hover {
+	background-color: #87CEEB;
+}
+#button:hover .info {
+	width: 105px;
+	height: 105px;
+	bottom: 112px;
+	opacity: 1.0;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.info ul {
+	font-weight: 1000;
+	color: white;
+	list-style: none;
+}
+.info img, .info span {
+	position: absolute;
+}
+.user img{
+	left: 30px;
+	top: 10px;
+}
+.user span {
+	left: 60px;
+	top: 10px;
+}
+.comment img {
+	left: 15px;
+	top: 40px;
+}
+.comment span {
+	left: 45px;
+	top: 40px;
+	font-size: 1.5rem;
+}
+.posted img {
+	left: 60px;
+	top: 40px;
+}
+.posted span {
+	left: 85px;
+	top: 43px;
+	font-size: 1.1rem;
+}
+.like img {
+	left: 30px;
+	top: 70px;
+}
+.like span {
+	left: 60px;
+	top: 70px;
+	font-size: 1.5rem;
+}
+.info img:hover, .info span:hover {
+	color: red;
+}
+/* 下面是ontrol-ring的操作 */
+ul#control-ring {
+	list-style: none;
+}
+ul#control-ring li {
+	background-color: #808069;
+	width: 32px;
+	height: 32px;
+	border-radius: 108em;
+	opacity: 0.0;
+	position: absolute;
+	left: 7px;
+	top: 8px;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+ul#control-ring li:hover {
+	background-color: #87CEEB;
+}
+ul#control-ring img {
+	position: absolute;
+	left: 5px;
+	top: 4px;
+}
+#button:hover li {
+	opacity: 1.0;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+#button:hover li.mask {
+	left: -51px;
+	top: -30px;
+}
+#button:hover li.history {
+	left: -48px;
+	top: 15px;
+}
+#button:hover li.message {
+	left: -30px;
+	top: 50px;
+}
+.unread {
+	font-size: 0.7rem;
+	text-align: center;
+	color: white;
+	width: 14px;
+	height: 14px;
+	border-radius: 108em;
+	background-color: red;
+	position: absolute;
+	left: 14px;
+}
+#button:hover li.setting {
+	left: 10px;
+	top: 60px;
+}
+#button:hover li.sign {
+	left: 52px;
+	top: 50px;
+}
+#button #bg1 {
+	position: absolute;
+	left: 8px;
+	top: 8px;
+}
+#button:hover #bg1 {
+	display: none;
+}
+/* 第一个@+消失 */
+#button #bg2 {
+	opacity: 0.0;
+	position: absolute;
+}
+#button:hover #bg2 {
+	width: 80%;
+	left: -43px;
+	top: -38px;
+	padding: 52px;
+	opacity: 1.0;
+	z-index: -1; /* 不能为1，不然由于层叠顺序，部分li无法使用hover */
+}
+/* 第二个@+出现 */
