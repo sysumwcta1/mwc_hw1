@@ -1,0 +1,248 @@
+﻿div
+{
+    width: 0px;
+    height: 0px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+
+img{position:relative;width: 25px;height: 25px;margin-top:10px;}
+#container
+{
+width: 200px;
+height: 200px;
+clear: both;
+border-radius: 0;
+margin-left: 50%;
+margin-bottom: 20%;
+margin-top: 80%;
+}
+#atplus
+{
+width: 30px;
+height: 30px;
+background-color: rgb(105,105,105);
+z-index: 1;
+transition-property: all;
+-moz-transition-property: all;           /* Firefox 4 */
+-webkit-transition-property:all;        /* Safari 和 Chrome */
+-o-transition-property:all;                 /* Opera */
+transition-duration: 1s;
+-moz-transition-duration: 1s;        /* Firefox 4 */
+-webkit-transition-duration: 1s;     /* Safari 和 Chrome */
+-o-transition-duration: 1s;             /* Opera */
+transition-timing-function: ease;
+-moz-transition-timing-function: ease; /* Firefox 4 */
+-webkit-transition-timing-function: ease; /* Safari 和 Chrome */
+-o-transition-timing-function: ease; /* Opera */
+}
+.imgHolder{width: 100%;height: 100%}
+
+.imgHolder img {margin-top: 3px;}
+
+/*bigbubble内部布局*/
+#bigbubble
+{
+background-color: rgb(105, 105,105);
+opacity: 0;
+z-index: 2;
+transition-property: all;
+-moz-transition-property: all;           /* Firefox 4 */
+-webkit-transition-property:all;        /* Safari 和 Chrome */
+-o-transition-property:all;                 /* Opera */
+transition-duration: 1s;
+-moz-transition-duration: 1s;        /* Firefox 4 */
+-webkit-transition-duration: 1s;     /* Safari 和 Chrome */
+-o-transition-duration: 1s;             /* Opera */
+transition-timing-function: ease;
+-moz-transition-timing-function: ease; /* Firefox 4 */
+-webkit-transition-timing-function: ease; /* Safari 和 Chrome */
+-o-transition-timing-function: ease; /* Opera */
+}
+
+#peopleNum{font-size: 16pt;color: white;margin-left: 3px;}
+#commentNum{font-size: 24pt;color: white;margin-left: 3px;}
+#postNum{font-size: 16pt;color:#079E6E;margin-left: 3px;}
+#likeNum{font-size: 16pt;color: #079E6E;margin-left: 3px;}
+
+#people{width: 100%;height: 30%;float: left;}
+#comment{width: 100%;height: 30%;float: left;}
+#postWrapper{width: 100%;height: 40%;float: left;}
+#bigPost{width: 50%;height: 100%;float: left;}
+#like{width: 50%;height: 100%;float: left;}
+
+/*post内部布局*/
+#post
+{
+background-image: url('C:\Users\Administrator\Desktop\@+Pro\img\post.png');
+background-color: rgb(105,105,105);
+opacity: 0;
+z-index: 3;
+transition-property: all;
+-moz-transition-property: all;           /* Firefox 4 */
+-webkit-transition-property:all;        /* Safari 和 Chrome */
+-o-transition-property:all;                 /* Opera */
+transition-duration: 1s;
+-moz-transition-duration: 1s;        /* Firefox 4 */
+-webkit-transition-duration: 1s;     /* Safari 和 Chrome */
+-o-transition-duration: 1s;             /* Opera */
+transition-timing-function: ease;
+-moz-transition-timing-function: ease; /* Firefox 4 */
+-webkit-transition-timing-function: ease; /* Safari 和 Chrome */
+-o-transition-timing-function: ease; /* Opera */
+}
+
+/*history内部布局*/
+#history
+{
+background-color: rgb(65,224,89);
+opacity: 0;
+z-index: 4;
+transition-property: all;
+-moz-transition-property: all;           /* Firefox 4 */
+-webkit-transition-property:all;        /* Safari 和 Chrome */
+-o-transition-property:all;                 /* Opera */
+transition-duration: 1s;
+-moz-transition-duration: 1s;        /* Firefox 4 */
+-webkit-transition-duration: 1s;     /* Safari 和 Chrome */
+-o-transition-duration: 1s;             /* Opera */
+transition-timing-function: ease;
+-moz-transition-timing-function: ease; /* Firefox 4 */
+-webkit-transition-timing-function: ease; /* Safari 和 Chrome */
+-o-transition-timing-function: ease; /* Opera */
+}
+
+/*message内部布局*/
+#message
+{
+background-color: rgb(158,125,164);
+opacity: 0;
+z-index: 5;
+transition-property: all;
+-moz-transition-property: all;           /* Firefox 4 */
+-webkit-transition-property:all;        /* Safari 和 Chrome */
+-o-transition-property:all;                 /* Opera */
+transition-duration: 1s;
+-moz-transition-duration: 1s;        /* Firefox 4 */
+-webkit-transition-duration: 1s;     /* Safari 和 Chrome */
+-o-transition-duration: 1s;             /* Opera */
+transition-timing-function: ease;
+-moz-transition-timing-function: ease; /* Firefox 4 */
+-webkit-transition-timing-function: ease; /* Safari 和 Chrome */
+-o-transition-timing-function: ease; /* Opera */
+}
+
+#messageNum
+{
+width: 15px;
+height: 15px;
+background-color: red;
+border-radius: 50%;
+float: right;
+}
+
+/*setting内部布局*/
+#setting
+{
+background-color: rgb(49,148,68);
+opacity: 0;
+z-index: 6;
+transition-property: all;
+-moz-transition-property: all;           /* Firefox 4 */
+-webkit-transition-property:all;        /* Safari 和 Chrome */
+-o-transition-property:all;                 /* Opera */
+transition-duration: 1s;
+-moz-transition-duration: 1s;        /* Firefox 4 */
+-webkit-transition-duration: 1s;     /* Safari 和 Chrome */
+-o-transition-duration: 1s;             /* Opera */
+transition-timing-function: ease;
+-moz-transition-timing-function: ease; /* Firefox 4 */
+-webkit-transition-timing-function: ease; /* Safari 和 Chrome */
+-o-transition-timing-function: ease; /* Opera */
+}
+
+/*signout内部布局*/
+#signout
+{
+background-color: rgb(105,106,189);
+opacity: 0;
+z-index: 7;
+transition-property: all;
+-moz-transition-property: all;           /* Firefox 4 */
+-webkit-transition-property:all;        /* Safari 和 Chrome */
+-o-transition-property:all;                 /* Opera */
+transition-duration: 1s;
+-moz-transition-duration: 1s;        /* Firefox 4 */
+-webkit-transition-duration: 1s;     /* Safari 和 Chrome */
+-o-transition-duration: 1s;             /* Opera */
+transition-timing-function: ease;
+-moz-transition-timing-function: ease; /* Firefox 4 */
+-webkit-transition-timing-function: ease; /* Safari 和 Chrome */
+-o-transition-timing-function: ease; /* Opera */
+}
+.innerImg{text-align: center;vertical-align: middle;margin: inherit;}
+
+/*在hover @+时，atplus的改变*/
+#atplus:hover
+{
+width: 60px;
+height: 60px;
+background-color:rgb(48, 63, 159);
+}
+#atplus:hover #atImg
+{
+}
+
+/*在hover @+时一些共同改变的属性值*/
+#atplus:hover #post,#atplus:hover #history,#atplus:hover #message,#atplus:hover #setting,#atplus:hover #signout
+{
+width: 50px;
+height: 50px;
+opacity: 1;
+}
+
+/*hover @+时，bigbubble的改变*/
+#atplus:hover #bigbubble
+{
+width:180px;
+height: 180px;
+margin-top: -250px;
+margin-left: -60px;
+opacity: 1;
+overflow: hidden;
+}
+
+/*hover @+时，post的属性改变*/
+#atplus:hover #post
+{
+margin-top: -60px;
+margin-left: -120px;
+}
+
+/*hover @+时，history的属性改变*/
+#atplus:hover #history
+{
+margin-top:25px;
+margin-left:-140px;
+}
+
+/*hover @+时，message的属性改变*/
+#atplus:hover #message
+{
+margin-left: -120px;
+margin-top: 30px;
+}
+
+/*hover @+时，setting的属性改变*/
+#atplus:hover #setting
+{
+margin-top: -10px;
+}
+
+/*hover @+时，signout的属性改变*/
+#atplus:hover #signout
+{
+margin-left: 120px;
+margin-top: -90px;
+}
