@@ -1,0 +1,185 @@
+/*主题布局*/
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+}
+
+#bottom-positioner{
+	width: 30%;
+	left: 45%;
+	bottom: 20rem;
+	position: absolute;
+}
+
+/*消息提示*/
+#info-bar{
+	position: absolute;		
+}
+#info-bar ul{
+	display: none;
+	transition:1s;
+}
+.info{
+	background-color: rgb(105, 105, 105);
+	border-radius: 50%;
+	width: 0rem;
+	height: 0rem;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	
+	transition:1s;
+}
+ .info .page{
+	display: block;
+	line-height: 2rem;
+	
+}
+.info .mine{
+	display: inline;
+}
+
+
+.info .user{
+	font-size: 16px;
+}
+ .info .comment{
+	font-size: 20px;
+}
+.info .posted,.info .like{
+	font-size: 16px;
+	color: rgb(64,224,208);
+}
+.info span{
+	margin-left: 0.5rem;
+	vertical-align: text-bottom;
+	display: none;
+}
+
+/*环*/
+
+ #control-ring-container .button{
+	position: absolute;
+	width: 0rem;
+	height: 0rem;
+	border-radius: 50%;
+    background-color: rgb(105, 105, 105);
+	background-size:60%;
+	background-position: center;
+    background-repeat:no-repeat;
+   	transition:1s;
+}
+
+#control-ring-container span{
+	position: absolute;
+	top: -0.5rem;
+	left: 0.8rem;
+	display: inline-block;
+	height: 0rem;
+	width: 0rem;
+	line-height: 1rem;
+	text-align: center;
+	color: white;
+
+	background: red;
+	border-radius: 50%;
+
+	transition:1s;
+}
+ .mask{
+    top:7.5rem;
+    left: 0.5rem;
+	background: url('assets/images/mask.png');
+}
+ .history{
+	top: 10rem;
+    left: -0.4rem;
+	background: url('assets/images/history.png');
+}
+ .message{
+	top: 13rem;
+    left: -0.3rem;
+	background: url('assets/images/message.png');
+}
+ .setting{
+	top: 14.5rem;
+    left: 2rem;
+	background: url('assets/images/setting.png');
+}
+ .sign{
+	top: 14rem;
+    left: 5rem;
+	background: url('assets/images/signin.png');
+}
+
+/*按钮*/
+.apb{
+	top: 10rem;
+    left: 2.5rem;
+	position: absolute;	
+}
+.apb .icon{
+	
+	margin: auto;
+	width: 2rem;
+	height : 2rem;
+	background: url('assets/images/atplus_white.png');
+	background-size:80%;
+	background-position: center;
+    background-repeat:no-repeat;
+    background-color: rgba(48, 63, 159,1);
+    border-radius: 50%;
+
+    transition:0.5s;
+}
+
+
+/*滑过操作*/
+#button:hover{
+	
+}
+/*消息提示*/
+#button:hover #info-bar{
+	
+}
+#button:hover #info-bar ul{
+	display: block;
+}
+#button:hover .info{
+	
+    width: 8rem;
+	height: 8rem;
+}
+
+
+#button:hover .info span{
+	display: inline;
+}
+/*环*/
+
+#button:hover #control-ring-container .button{
+	width: 1.8rem;
+	height: 1.8rem;
+	
+}
+#button:hover #control-ring-container span{
+	height: 1rem;
+	width: 1rem;
+}
+
+
+/*按钮*/
+#button:hover .apb .icon{
+	width: 3rem;
+	height : 3rem;
+	background: url('assets/images/atplus_green.png');
+	background-size:80%;
+	background-position: center;
+    background-repeat:no-repeat;
+    background-color: rgba(48, 63, 159,1);
+}
+
+
