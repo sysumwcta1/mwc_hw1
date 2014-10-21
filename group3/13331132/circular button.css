@@ -1,0 +1,278 @@
+.white_a {
+	position: absolute;
+	left: 49%;
+	top: 80%
+}
+
+.white_at {
+	padding: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 25px;
+	height: 20px;
+	border-radius: 100px;
+	background-color: gray;
+}
+
+.green_at {
+	padding: 6px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	width: 40px;
+	height: 30px;
+	border-radius: 100px;
+	background-color: rgba(48,63,159,1);
+	transform: scale(0.1, 0.1);
+}
+
+.green_a {
+	position: absolute;
+	left: 48%;
+	top: 77.5%;
+}
+
+.mask {
+	padding: 5px;
+	width: 23px;
+	height: 23px;
+	border-radius: 100px;
+	background-color: #666666;
+	position: relative;
+	//left: -50px;
+	//top: 10px;
+	transform: scale(0.1, 0.1);
+	top: 50px;
+}
+
+.history {
+	padding: 5px;
+	width: 23px;
+	height: 23px;
+	border-radius: 100px;
+	background-color: #666666;
+	position: relative;
+	//left: -58px;
+	//top: 15px;
+	transform: scale(0.1, 0.1);
+	top: 20px;
+}
+
+.message {
+	padding: 5px;
+	width: 23px;
+	height: 23px;
+	border-radius: 100px;
+	background-color: #666666;
+	position: relative;
+	//left: -45px;
+	//top: 19px;
+	transform: scale(0.1, 0.1);
+	top: -10px;
+}
+.message span {
+	padding: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+	width: 30px;
+	height: 5px;
+	border-radius: 100px;
+	background-color: red;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Arial;
+	position: relative;
+	top: -35px;
+	left: 18px;
+}
+
+.setting {
+	padding: 5px;
+	width: 23px;
+	height: 23px;
+	border-radius: 100px;
+	background-color: #666666;
+	position: relative;
+	//left: -10px;
+	//top: 10px;
+	transform: scale(0.1, 0.1);
+	top: -45px;
+}
+
+.signin {
+	padding: 5px;
+	width: 23px;
+	height: 23px;
+	border-radius: 100px;
+	background-color: #666666;
+	position: relative;
+	//left: 35px;
+	//top: -23px;
+	transform: scale(0.1, 0.1);
+	top: -75px;
+}
+
+.control-ring-container {
+	/*border-radius: 250px;
+	width: 150px;
+	height: 150px;
+	background-color: rgba(0,255,255,0.4);*/
+	position: absolute;
+	top: 70%;
+	left: 45%;
+
+}
+
+.page_user span {
+	color: white;
+	margin-left: 5px;
+	font-weight: bold;
+	font-family: Arial;
+	vertical-align: top;
+}
+.info .page_user {
+	position: relative;
+	left: 10px;
+	top: -5px;
+}
+
+
+.info .page_comment {
+	position: relative;
+	left:0px;
+	top: 10px;
+}
+.page_comment span {
+	color: white;
+	font-size: 2em;
+	font-family: Arial;
+	font-weight: bold;
+	margin-left: 10px;
+
+}
+
+
+.info .mine_posted {
+	position: relative;
+	left: -10px;
+	top: 20px;
+}
+.mine_posted span {
+	color: #079E6E;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-family: Arial;
+	margin-left: 5px;
+	vertical-align: top;
+}
+
+
+.info .mine_like {
+	position: relative;
+	left: 45px;
+	top: -5px;
+}
+.mine_like span {
+	color: #079E6E;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-family: Arial;
+	margin-left: 5px;
+	vertical-align: top;
+}
+
+
+ul {
+	list-style-type: none;
+}
+.info {
+	display:block;
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	background-color: #666666;
+	position: absolute;
+	left: 605px;
+	top: 485px;
+	-webkit-transform: scale(0.1,0.1);
+}
+
+
+.trans {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.whole:hover .trans {
+	opacity: 1;
+	-webkit-transition: opacity 1.5s;
+	-moz-transition: transform 1.5s;
+    -o-transition: transform 1.5s;
+    -ms-transition: transform 1.5s;
+    transition: transform 1.5s;
+	visibility: visible;
+}
+.whole:hover .white_a{
+	opacity:  0;
+	-webkit-transition: opacity 1s
+	-moz-transition: transform 1s;
+    -o-transition: transform 1s;
+    -ms-transition: transform 1s;
+    transition: transform 1s;
+}
+.whole:hover .green_at{
+	transform: scale(1, 1);
+	-webkit-transition: transform 1.5s;
+	-moz-transition: transform 1.5s;
+    -o-transition: transform 1.5s;
+    -ms-transition: transform 1.5s;
+    transition: transform 1.5s;
+}
+.whole:hover .info {
+	transform: scale(1,1) translate(0, -150px);
+	-webkit-transition: transform 1.5s;
+	-moz-transition: transform 1.5s;
+    -o-transition: transform 1.5s;
+    -ms-transition: transform 1.5s;
+    transition: transform 1.5s;
+}
+.whole:hover .mask {
+	transform : scale(1, 1) translate(-50px, -40px);
+	-webkit-transition: transform 1.5s;
+	-moz-transition: transform 1.5s;
+    -o-transition: transform 1.5s;
+    -ms-transition: transform 1.5s;
+    transition: transform 1.5s;
+}
+.whole:hover .history {
+	transform : scale(1, 1) translate(-58px, -5px);
+	-webkit-transition: transform 1.5s;
+	-moz-transition: transform 1.5s;
+    -o-transition: transform 1.5s;
+    -ms-transition: transform 1.5s;
+    transition: transform 1.5s;
+}
+.whole:hover .message {
+	transform : scale(1, 1) translate(-45px, 29px);
+	-webkit-transition: transform 1.5s;
+	-moz-transition: transform 1.5s;
+    -o-transition: transform 1.5s;
+    -ms-transition: transform 1.5s;
+    transition: transform 1.5s;
+}
+.whole:hover .setting {
+	transform : scale(1, 1) translate(-10px, 55px);
+	-webkit-transition: transform 1.5s;
+	-moz-transition: transform 1.5s;
+    -o-transition: transform 1.5s;
+    -ms-transition: transform 1.5s;
+    transition: transform 1.5s;
+}
+.whole:hover .signin {
+	transform : scale(1, 1) translate(35px, 52px);
+	-webkit-transition: transform 1.5s;
+	-moz-transition: transform 1.5s;
+    -o-transition: transform 1.5s;
+    -ms-transition: transform 1.5s;
+    transition: transform 1.5s;
+}
