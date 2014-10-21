@@ -1,0 +1,217 @@
+body {
+  background-color: lightgray;
+}
+
+/* 设置@+ */
+#button {
+  width: 40px;
+  height: 40px;
+  border-radius: 99em;
+  background-color: gray;
+  margin-left: -20px;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+}
+
+#button:hover {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(48, 63, 159, 1);
+  margin-left: -25px;
+  z-index: -2;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#button img#white {
+  position: absolute;
+  left: 7px;
+  top: 10px;
+}
+
+#button:hover #white {
+  display: none;
+}
+
+#button #green {
+  opacity: 0;
+  position: absolute;
+  left: 7px;
+  top: 10px;
+}
+
+#button:hover #green {
+  width: 80%;
+  padding: 50px;
+  left: -43px;
+  top: -40px;
+  opacity: 1;
+  z-index: -1;
+}
+/* 结束@+ */
+
+/* 设置info-bar圆环 */
+.info {
+  width: 50px;
+  height: 50px;
+  border-radius: 99em;
+  background-color: gray;
+  margin-left: -55px;
+  position: fixed;
+  bottom: 70px;
+  left: 50%;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.info:hover {
+  background-color: #6666Ff;
+}
+
+#button:hover .info {
+  width: 110px;
+  height: 110px;
+  opacity: 1;
+  bottom: 110px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.info ul {
+  font-weight: 900;
+  color: white;
+  list-style: none;
+}
+
+.info img, .info span {
+  position: absolute;
+}
+
+.user img{
+  left: 30px;
+  top: 10px;
+}
+
+.user span {
+  left: 65px;
+  top: 13px;
+}
+
+.comment img {
+  left: 20px;
+  top: 40px;
+}
+
+.comment span {
+  left: 55px;
+  top: 32px;
+  font-size: 2rem;
+}
+
+.posted img {
+  left: 17px;
+  top: 70px;
+}
+
+.posted span {
+  left: 40px;
+  top: 70px;
+  font-size: 1.2rem;
+  color: #079E6E;
+}
+
+.like img {
+  left: 55px;
+  top: 70px;
+}
+
+.like span {
+  left: 85px;
+  top: 70px;
+  font-size: 1.2rem;
+  color: #079E6E;
+}
+
+/* 结束info-bar圆环 */
+
+/* 设置环形菜单 */
+ul#control-ring {
+  list-style: none;
+}
+
+ul#control-ring li {
+  width: 32px;
+  height: 32px;
+  border-radius: 99em;
+  background-color: gray;
+  opacity: 0;
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+ul#control-ring li:hover {
+  background-color: #6666FF;
+}
+
+ul#control-ring img {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+}
+
+#button:hover li {
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#button:hover li.mask {
+  left: -55px;
+  top: -30px;
+}
+
+
+#button:hover li.history {
+  left: -52px;
+  top: 15px;
+}
+
+#button:hover li.message {
+  left: -30px;
+  top: 50px;
+}
+
+.unread {
+  width: 15px;
+  height: 15px;
+  border-radius: 99em;
+  background-color: red;
+  position: absolute;
+  left: 15px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+}
+
+#button:hover li.setting {
+  left: 10px;
+  top: 57px;
+}
+
+#button:hover li.sign {
+  left: 50px;
+  top: 55px;
+}
+/* 结束环形菜单 */
