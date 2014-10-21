@@ -1,0 +1,189 @@
+body {
+	background-color: white;
+}
+
+.icon {
+	width:30px;
+	height:30px;
+	border-radius: 30px;
+	overflow:hidden;
+
+    background-image:url(assets/images/atplus_white.png);
+   	background-repeat: no-repeat;
+    background-color: gray;
+    background-size: 25px;
+    background-position: 50% 50%;
+
+    position: absolute;
+    bottom: 100px;
+    left: 650px;
+}
+
+.icon:hover {
+	width:60px;
+	height: 60px;
+	border-radius: 60px;
+	overflow:hidden;
+
+    background-image:url(assets/images/atplus_green.png);
+    background-repeat:no-repeat;
+    background-color: rgba(48, 63, 159, 1);
+    background-size: 40px;
+
+    position: absolute;
+    bottom: 85px;
+    left: 635px;
+}
+
+.info {
+	width:120px;
+	height:120px;
+	border-radius: 120px;
+	overflow:hidden;
+
+   	background-repeat: no-repeat;
+    background-color: gray;
+    background-size: 50px;
+    background-position: 50% 50%;
+
+    position: absolute;
+    bottom: 160px;
+    left: 610px;
+ 
+}
+.page_user {
+    position: absolute;
+    bottom: 85px;
+    left: 30px;
+}
+.page_comment {
+    position: absolute;
+    bottom: 60px;
+    left: 25px;
+}
+.mine_posted {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+}
+.mine_like {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+}
+#control-ring-container {
+    display: block;
+    width:150px;
+	height:150px;
+	border-radius: 150px;
+	overflow:hidden;
+
+	background-repeat: no-repeat;
+    background-color: white;
+    background-size: 50px;
+    background-position: 50% 50%;
+
+    position: absolute;
+    bottom: 10px;
+    left: 560px;
+}
+
+.mask_button {
+	width:30px;
+	height: 30px;
+	border-radius: 30px;
+	overflow:hidden;
+
+    background-image:url(assets/images/mask.png);
+    background-repeat:no-repeat;
+    background-color: gray;
+    background-size: 25px;
+    background-position: 50% 50%;
+
+    position: absolute;
+    bottom: 105px;
+    left: 24px;
+
+}
+.history_button {
+	width:30px;
+	height: 30px;
+	border-radius: 30px;
+	overflow:hidden;
+
+    background-image:url(assets/images/history.png);
+    background-repeat:no-repeat;
+    background-color: gray;
+    background-size: 25px;
+    background-position: 50% 50%;
+
+    position: absolute;
+    bottom: 65px;
+    left: 23px;
+}
+
+.message_button {
+	width:30px;
+	height: 30px;
+	border-radius: 30px;
+	overflow:hidden;
+
+    background-image:url(assets/images/message.png);
+    background-repeat:no-repeat;
+    background-color: gray;
+    background-size: 25px;
+    background-position: 50% 50%;
+
+    position: absolute;
+    bottom: 30px;
+    left: 45px;
+}
+.setting_button {
+	width:30px;
+	height: 30px;
+	border-radius: 30px;
+	overflow:hidden;
+
+    background-image:url(assets/images/setting.png);
+    background-repeat:no-repeat;
+    background-color: gray;
+    background-size: 25px;
+    background-position: 50% 50%;
+
+    position: absolute;
+    bottom: 23px;
+    left:84px;
+}
+.sign_button {
+	width:30px;
+	height: 30px;
+	border-radius: 30px;
+	overflow:hidden;
+
+    background-image:url(assets/images/signin.png);
+    background-repeat:no-repeat;
+    background-color: gray;
+    background-size: 25px;
+    background-position: 50% 50%;
+
+    position: absolute;
+    bottom: 50px;
+    left: 120px;
+}
+
+.unread {
+	width:18px;
+	height: 18px;
+	border-radius: 18px;
+	overflow:hidden;
+
+	background-color:orange;
+	position: absolute;
+    bottom: 17px;
+    left: 14px;
+}
+ul li {
+	list-style: none;
+}
+
+
