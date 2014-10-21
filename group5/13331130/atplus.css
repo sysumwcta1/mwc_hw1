@@ -2,7 +2,7 @@ body {
   background-color: lightgray;
 }
 
-/* 设置初始@+ */
+/* 设置@+ */
 #button {
   width: 40px;
   height: 40px;
@@ -17,12 +17,8 @@ body {
 #button:hover {
   width: 50px;
   height: 50px;
-  border-radius: 99em;
   background-color: rgba(48, 63, 159, 1);
   margin-left: -25px;
-  position: fixed;
-  bottom: 50px;
-  left: 50%;
   z-index: -2;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -56,7 +52,7 @@ body {
 }
 /* 结束@+ */
 
-/* 设置状态圆环 */
+/* 设置info-bar圆环 */
 .info {
   width: 50px;
   height: 50px;
@@ -142,7 +138,7 @@ body {
   color: #079E6E;
 }
 
-/* 结束状态圆环 */
+/* 结束info-bar圆环 */
 
 /* 设置环形菜单 */
 ul#control-ring {
