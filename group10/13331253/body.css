@@ -1,0 +1,247 @@
+body
+        {
+
+            background: white;
+        }
+        
+        .container
+        {
+            width: 550px;
+            display: block;
+            margin: auto;
+            position: relative;
+        }
+        
+        h1
+        {
+            text-align: center;
+            font-family: 'Roboto' , sans-serif;
+            font-weight: 400;
+            color: #f1c40f;
+        }
+        
+        .menu_opener
+        {
+            display: none;
+        }
+        .menu_opener:checked ~ .link_one
+        {
+            top: 800px;
+            left:47%;
+            background-color:rgba(80,80,80,0.9);
+           
+             background-image:url("message.png");
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+        .menu_opener:checked ~ .link_two
+        {
+            background-color:rgba(80,80,80,0.9);
+           
+             background-image:url("nomask.png");
+            background-position: center;
+            background-repeat: no-repeat;
+
+            left:44%;
+            top:695px;
+        }
+        .menu_opener:checked ~ .link_three
+        {
+            background-color:rgba(80,80,80,0.8);
+           
+            top: 570px;
+            left:48%;
+            width: 140px;
+            height:140px;
+            color: rgba(250,250,250,1);
+            font-family: 'Roboto' , sans-serif;
+            opacity: 1;
+           /* background-image: url("like.png");
+            background-image: url("people.png");
+            background-image: url("post.png");
+            background-image: url("signin.png");*/
+            background-repeat: no-repeat;
+        }
+        .menu_opener:checked ~ .link_four
+        {
+            top:750px;
+            left:42%;
+            background-color:rgba(80,80,80,0.9);
+             background-image:url("setting.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            /*background-color:rgba(155,155,155,0.9);*/
+        }
+        .menu_opener:checked ~ .link_five
+        {
+            left:55%;
+            top: 820px;
+            background-color:rgba(80,80,80,0.9);
+            
+             background-image:url("history.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            /*background-color:rgba(155,155,155,0.9);*/
+        }
+        
+
+        .menu_opener:checked ~ .link_six
+        {
+            top: 800px;
+            left:63%;
+            background-color:rgba(80,80,80,0.9);
+           
+            background-image:url("signout.png");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .menu_opener:checked ~ .link_seven {
+            width: 60px;
+            height:60px;
+            background-color:rgba(48, 63, 159, 1);
+            background-image:url("atplus_green.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 70%;
+
+        }
+        .menu_opener_label
+        {
+            width: 40px;
+            height:40px;
+            display: block;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            top: 718px;
+            left: 50%;
+            z-index: 100;
+            background-color: rgba(48, 63, 159, 0);
+            /*background-image:url("atplus_white.png");*/
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            line-height: 50%;
+            margin: 10px;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+
+        }
+        /*.menu_opener_label:hover ~.link_six {
+            width: 40px;
+            height: 40px;
+            background-color:rgba(255,155,0,0);
+        }*/
+        /*.menu_opener_label:hover {
+            width: 60px;
+            height:60px;
+            background-color:rgba(48, 63, 159, 1);
+            background-image:url("atplus_green.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 70%;
+            
+      
+        }*/
+       
+        
+        .link_general
+        {
+            width: 40px;
+            height: 40px;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 735px;
+            left: 52%;
+            background-color:rgba(250,250,250,0);
+            -webkit-transition: all 0.8s ease;
+            transition: all 0.8s ease;
+             text-align: center;
+        }
+        .link_one
+        {
+            position: absolute;
+            background-color:rgba(255,155,0,0);
+        }
+        
+        .link_two
+        {
+            /*background: url("mail.png") no-repeat center center;*/
+            background-color:rgba(255,155,0,0);
+        }
+        
+        .link_three
+        {
+           /* background: url("set.png") no-repeat center center;*/
+            background-color:rgba(255,155,0,0);
+            color: rgba(250,250,250,0);
+            opacity: 0;
+        }
+        
+        .link_four
+        {
+           /* background: url("start.png")  no-repeat center center;*/
+            background-color:rgba(255,155,0,0);
+        }
+         .link_five
+        {
+            /*background: url("start.png")  no-repeat center center;*/
+            background-color:rgba(255,155,0,0);
+        }
+       /.link_six {
+           /* background: url("start.png")  no-repeat center center;*/
+            background-color:rgba(255,155,0,0);
+        }
+        
+        .link_seven {
+            position: absolute;
+            top: 718px;
+            left: 50%;
+
+            width: 40px;
+            height:40px;
+            background-color: rgba(48, 63, 159, 0.7);
+            background-image:url("atplus_white.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            line-height: 50%;
+            margin: 10px;
+        }
+#font1 {
+    font-size: 18px;
+
+}
+#font2 {
+    font-size: 40px;
+}
+p {
+    padding: 0;
+    margin: 6px;
+}
+#font3 {
+    font-size: 20px;
+    color: rgba(0,251,250,0.8);
+    font-weight: 500px;
+}
+.link_tip {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 25px;
+    top: -10px;
+    display: block;
+    border-radius: 50%;
+    opacity: 0;
+    color: rgba(250,250,250,0.8);
+    text-align: center;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 16px;
+
+}
+.menu_opener:checked ~ .link_one * {
+    background-color: rgba(250,0,0,0.7);
+    opacity: 1;
+}
