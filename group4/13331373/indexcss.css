@@ -1,0 +1,441 @@
+#bottom-positioner{
+	width: 400px;
+	height: 400px;
+	margin: auto auto;
+}
+#button:hover{
+	width: 50px; 
+	height: 50px; 
+	-moz-border-radius: 25px; 
+	-webkit-border-radius: 25px; 
+	border-radius: 25px;	
+	margin: 295px 175px 55px 175px;
+	background-image: url('assets/images/atplus_green.png');
+	background-repeat: no-repeat;
+	background-size: 85%;
+	background-position: center;
+	background-color: rgba(48, 63, 159, 1);
+}
+#button:hover #info-bar{
+	visibility: visible;
+	width: 120px; 
+	height: 120px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-moz-border-radius: 60px; 
+	-webkit-border-radius: 60px; 
+	border-radius: 60px; 
+	position: relative;
+	left: -40px;
+	top: -130px;
+}
+#button:hover #control-ring-container{
+	visibility: visible;
+	width: 150px; 
+	height: 120px; 
+	position: relative;
+	top: -140px;
+	left: -50px;
+}
+#button:hover .info{
+	visibility: visible;
+	width: 80px; 
+	height: 71px;
+	position: relative;
+	top: 15px;
+}
+#button:hover .people{
+	visibility: visible;
+	width: 22px;
+}
+#button:hover .numofp{
+	visibility: visible;
+	font-size: 20px;
+	font-weight: bold;
+}
+#button:hover .comment{
+	visibility: visible;
+	width: 22px;
+}
+#button:hover .numofc{
+	visibility: visible;
+	font-size: 40px;
+	font-weight: bold;
+}
+#button:hover .post{
+	visibility: visible;
+	width: 22px;
+}
+#button:hover .numofpost{
+	visibility: visible;
+	font-size: 20px;
+	color: #079E6E;
+	font-weight: bold;
+}
+#button:hover .like{
+	visibility: visible;
+	width: 22px;
+}
+#button:hover .numofl{
+	visibility: visible;
+	font-size: 20px;
+	color: #079E6E;
+	font-weight: bold;
+}
+#button:hover .mask_button{
+	visibility: visible;
+	width: 30px; 
+	height: 30px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border-radius: 15px;
+	position: relative;
+	left: 10px;
+}
+#button:hover .mask{
+	visibility: visible;
+	width: 24px;
+	position: relative;
+	right: -2px;
+	bottom: -3px;
+}
+#button:hover .history_button{
+	visibility: visible;
+	width: 30px; 
+	height: 30px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border-radius: 15px; 
+}
+#button:hover .history{
+	visibility: visible;
+	position: relative;
+	right: -2px;
+	bottom: -3px;
+	width: 24px;
+}
+#button:hover .message_button{
+	visibility: visible;
+	display: inline-block;
+	width: 30px; 
+	height: 30px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border-radius: 15px;
+	position: relative;
+	left: 10px;
+}
+#button:hover .message{
+	visibility: visible;
+	width: 24px;
+	position: relative;
+	bottom: -3px;
+	right: -2px;
+}
+#button:hover .unread{
+	visibility: visible;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: red; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border-radius: 10px; 
+	text-align: center;
+	font-size: 18px;
+	position: relative;
+	right: 10px;
+	bottom: 15px;
+}
+#button:hover .setting_button{
+	visibility: visible;
+	width: 30px; 
+	height: 30px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border-radius: 15px;
+	position: relative;
+	right: -39px;
+	bottom: 15px;
+}
+#button:hover .setting{
+	visibility: visible;
+	position: relative;
+	bottom: -3px;
+	right: -2px;
+	width: 24px;
+}
+#button:hover .sign_button{
+	visibility: visible;
+	width: 30px; 
+	height: 30px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border-radius: 15px; 
+	position: relative;
+	right: -71px;
+	bottom: 48px;
+}
+#button:hover .signin{
+	visibility: visible;
+	position: relative;
+	bottom: -3px;
+	right: -2px;
+	width: 24px;
+}
+
+
+
+
+
+
+
+#button{
+	width: 30px; 
+	height: 30px; 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border-radius: 15px;	
+	margin: 305px 185px 65px 185px;
+	background-image: url('assets/images/atplus_green.png');
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center;
+	background-color: rgba(128, 138, 135, 1);
+	transition: width 1s, height 1s, border-radius 1s, margin 1s, background-size 1s;
+	-moz-transition: width 1s, height 1s, border-radius 1s, margin 1s, background-size 1s;
+	-webkit-transition: width 1s, height 1s, border-radius 1s, margin 1s, background-size 1s;
+	-o-transition: width 1s, height 1s, border-radius 1s, margin 1s, background-size 1s;
+}
+#info-bar{
+	width: 2px; 
+	height: 2px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-moz-border-radius: 60px; 
+	-webkit-border-radius: 60px; 
+	border-radius: 60px; 
+	position: relative;
+	top: 14px;
+	left: 14px;
+	transition: width 1s, height 1s, top 1s, left 1s;
+	-moz-transition: width 1s, height 1s, top 1s, left 1s;
+	-webkit-transition: width 1s, height 1s, top 1s, left 1s;
+	-o-transition: width 1s, height 1s, top 1s, left 1s;
+}
+#control-ring-container{
+	width: 2px; 
+	height: 2px; 
+	position: relative;
+	top: 12px;
+	left: 14px;
+	transition: width 1s, height 1s, top 1s, left 1s;
+	-moz-transition: width 1s, height 1s, top 1s, left 1s;
+	-webkit-transition: width 1s, height 1s, top 1s, left 1s;
+	-o-transition: width 1s, height 1s, top 1s, left 1s;
+}
+.info{
+	width: 2px; 
+	height: 2px;
+	margin: auto;
+	position: relative;
+	top: 0px;
+	transition: width 1s, height 1s, top 1s;
+	-moz-transition: width 1s, height 1s, top 1s;
+	-webkit-transition: width 1s, height 1s, top 1s;
+	-o-transition: width 1s, height 1s, top 1s;
+}
+.people{
+	width: 0px;
+	transition: width 1s;
+	-moz-transition: width 1s;
+	-webkit-transition: width 1s;
+	-o-transition: width 1s;
+}
+.numofp{
+	font-size: 0px;
+	transition: font-size 1s;
+	-moz-transition: font-size 1s;
+	-webkit-transition: font-size 1s;
+	-o-transition: font-size 1s;
+}
+.comment{
+	width: 0px;
+	transition: width 1s;
+	-moz-transition: width 1s;
+	-webkit-transition: width 1s;
+	-o-transition: width 1s;
+}
+.numofc{
+	font-size: 0px;
+	transition: font-size 1s;
+	-moz-transition: font-size 1s;
+	-webkit-transition: font-size 1s;
+	-o-transition: font-size 1s;
+}
+.post{
+	width: 0px;
+	transition: width 1s;
+	-moz-transition: width 1s;
+	-webkit-transition: width 1s;
+	-o-transition: width 1s;
+}
+.numofpost{
+	color: #079E6E;
+	font-weight: bold;
+	font-size: 0px;
+	transition: font-size 1s;
+	-moz-transition: font-size 1s;
+	-webkit-transition: font-size 1s;
+	-o-transition: font-size 1s;
+}
+.like{
+	width: 0px;
+	transition: width 1s;
+	-moz-transition: width 1s;
+	-webkit-transition: width 1s;
+	-o-transition: width 1s;
+}
+.numofl{
+	color: #079E6E;
+	font-weight: bold;
+	font-size: 0px;
+	transition: font-size 1s;
+	-moz-transition: font-size 1s;
+	-webkit-transition: font-size 1s;
+	-o-transition: font-size 1s;
+}
+.mask_button{
+	width: 0px; 
+	height: 0px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border-radius: 15px;
+	position: relative;
+	top: 0px;
+	transition: width 1s, height 1s, top 1s;
+	-moz-transition: width 1s, height 1s, top 1s;
+	-webkit-transition: width 1s, height 1s, top 1s;
+	-o-transition: width 1s, height 1s, top 1s;
+}
+.mask{
+	position: relative;
+	right: 0px;
+	width: 0px;
+	transition: width 1s, right 1s, bottom 1s;
+	-moz-transition: width 1s, right 1s, bottom 1s;
+	-webkit-transition: width 1s, right 1s, bottom 1s;
+	-o-transition: width 1s, right 1s, bottom 1s;
+}
+.history_button{
+	width: 0px; 
+	height: 0px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border-radius: 15px; 
+	transition: width 1s, height 1s;
+	-moz-transition: width 1s, height 1s;
+	-webkit-transition: width 1s, height 1s;
+	-o-transition: width 1s, height 1s;
+}
+.history{
+	position: relative;
+	right: 0px;
+	width: 0px;
+	transition: width 1s, right 1s, bottom 1s;
+	-moz-transition: width 1s, right 1s, bottom 1s;
+	-webkit-transition: width 1s, right 1s, bottom 1s;
+	-o-transition: width 1s, right 1s, bottom 1s;
+}
+.message_button{
+	display: inline-block;
+	width: 0px; 
+	height: 0px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border-radius: 15px;
+	position: relative;
+	left: 10px;
+	transition: width 1s, height 1s, left 1s;
+	-moz-transition: width 1s, height 1s, left 1s;
+	-webkit-transition: width 1s, height 1s, left 1s;
+	-o-transition: width 1s, height 1s, left 1s;
+}
+.message{
+	width: 0px;
+	position: relative;
+	bottom: 0px;
+	transition: width 1s, bottom 1s;
+	-moz-transition: width 1s, bottom 1s;
+	-webkit-transition: width 1s, bottom 1s;
+	-o-transition: width 1s, bottom 1s;
+}
+.unread{
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	background-color: red; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border-radius: 10px; 
+	text-align: center;
+	font-size: 0px;
+	position: relative;
+	right: 0px;
+	transition: width 1s, height 1s, right 1s, bottom 1s, font-size 1s;
+	-moz-transition: width 1s, height 1s, right 1s, bottom 1s, font-size 1s;
+	-webkit-transition: width 1s, height 1s, right 1s, bottom 1s, font-size 1s;
+	-o-transition: width 1s, height 1s, right 1s, bottom 1s, font-size 1s;
+}
+.setting_button{
+	width: 0px; 
+	height: 0px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border-radius: 15px;
+	position: relative;
+	right: 0px;
+	transition: width 1s, height 1s, right 1s, bottom 1s;
+	-moz-transition: width 1s, height 1s, right 1s, bottom 1s;
+	-webkit-transition: width 1s, height 1s, right 1s, bottom 1s;
+	-o-transition: width 1s, height 1s, right 1s, bottom 1s;
+}
+.setting{
+	width: 0px;
+	position: relative;
+	right: 0px;
+	transition: width 1s, right 1s, bottom 1s;
+	-moz-transition: width 1s, right 1s, bottom 1s;
+	-webkit-transition: width 1s, right 1s, bottom 1s;
+	-o-transition: width 1s, right 1s, bottom 1s;
+}
+.sign_button{
+	width: 0px; 
+	height: 0px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border-radius: 15px;
+	position: relative;
+	right: 0px;
+	transition: width 1s, height 1s, right 1s, bottom 1s;
+	-moz-transition: width 1s, height 1s, right 1s, bottom 1s;
+	-webkit-transition: width 1s, height 1s, right 1s, bottom 1s;
+	-o-transition: width 1s, height 1s, right 1s, bottom 1s;
+}
+.signin{
+	width: 0px;
+	position: relative;
+	right: 0px;
+	transition: width 1s, right 1s, bottom 1s;
+	-moz-transition: width 1s, right 1s, bottom 1s;
+	-webkit-transition: width 1s, right 1s, bottom 1s;
+	-o-transition: width 1s, right 1s, bottom 1s;
+}
