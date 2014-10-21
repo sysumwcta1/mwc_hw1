@@ -74,6 +74,7 @@
 	color: white;
 	font-family: Verdana, serif;
 	transform: translate(0px, -60px);
+/*	transition: height 1s, width 1s, border-radius 1s, transform 1s, opacity 1s;*/
 }
 #info-bar li {
 	list-style: none;
