@@ -1,0 +1,215 @@
+#button{
+	background-image: url("assets/images/atplus_white.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(48,63,159,1);
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	color: #079E6E;
+	position: relative;
+	left: 48%;
+	top: 400px;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+#button:hover {
+	background-image: url("assets/images/atplus_green.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(48,63,159,50);
+	width: 80px;
+	height: 80px;
+	top:390px;
+	left: 47%;
+	border-radius: 100px;
+	color: #079E6E;
+	overflow: visible;
+}
+div.info{
+	padding: none;
+	margin: none;
+	position: relative;
+	overflow: hidden;
+	background-color: rgba(48,63,159,1);
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	color: #079E6E;
+	opacity: 0;
+	top: 0px;
+	left: -20px;
+	-webkit-transition:all 1s;
+}
+#button:hover div.info{
+	width: 130px;
+	height: 130px;
+	border-radius: 130px;
+	opacity: 1;
+	top: -140px;
+	left: -10px;
+
+}
+li.mask.button{
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-image: url("assets/images/mask.png");
+	opacity: 0;
+	background-color: rgba(48,63,159,1);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition:all 1s;
+}
+#button:hover li.mask.button{
+	top: -30px;
+	left: -40px;
+	opacity: 1;
+}
+li.history.button{
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-image: url("assets/images/history.png");
+	opacity: 0;
+	background-color: rgba(48,63,159,1);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition:all 1s;	
+}
+#button:hover li.history.button{
+	top: 15px;
+	left: -60px;
+	opacity: 1;
+}
+li.message.button{
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-image: url("assets/images/message.png");
+	opacity: 0;
+	background-color: rgba(48,63,159,1);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition:all 1s;	
+}
+#button:hover li.message.button{
+	top: 60px;
+	left: -40px;
+	opacity: 1;
+}
+li.setting.button{
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-image: url("assets/images/setting.png");
+	opacity: 0;
+	background-color: rgba(48,63,159,1);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition:all 1s;	
+}
+#button:hover li.setting.button{
+	top: 90px;
+	left: 0px;
+	opacity: 1;
+}
+li.sign.button{
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-image: url("assets/images/signin.png");
+	opacity: 0;
+	background-color: rgba(48,63,159,1);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition:all 1s;	
+}
+#button:hover li.sign.button{
+	top: 80px;
+	left: 50px;
+	opacity: 1;
+}
+li{
+	list-style: none;
+}
+.page.user>span{
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	left: 10px;
+	top: -4px;
+}
+.page.comment>span{
+	font-size: 30px;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	left: 10px;
+	top: -4px;
+}
+.mine.posted{
+	display: inline;
+}
+.mine.posted>img{
+	position: relative;
+	left: -20px;
+	display: inline;
+}
+.mine.posted>span{
+	width: 10px;
+	font-size: 20px;
+	color: #00FFFF;
+	display: inline;
+	font-weight: bold;
+	position: relative;
+	left: -15px;
+	top: -4px;
+}
+.mine.like{
+	display: inline;
+}
+.mine.like>img{
+	position: relative;
+	left: -10px;
+	display: inline;
+}
+.mine.like>span{
+	color: #00FFFF;
+	font-size: 20px;
+	display: inline;
+	font-weight: bold;
+	position: relative;
+	left: -5px;
+	top: -4px;
+}
+.unread{
+	text-align: center;
+	font-weight: bold;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	display: inline-block;
+	background-position: center;
+	color: white;
+	background-color: red;
+	position: relative;
+	left: 25px;
+	top: -3px;
+}
