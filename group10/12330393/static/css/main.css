@@ -29,6 +29,9 @@ ul {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
+#button {
+  cursor: pointer; }
+
 #button:hover {
   width: 200px;
   height: 200px;

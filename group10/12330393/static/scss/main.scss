@@ -42,7 +42,9 @@ ul {
 	@include css3(transition,all $time);
 }
 //when the mouse is on the button
-
+#button {
+	cursor: pointer;
+}
 #button:hover {
 	width: 200px;
 	height: 200px;
