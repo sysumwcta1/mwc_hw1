@@ -13,7 +13,7 @@
 $iconSize: 35px;
 $iconColor: #999fd3;
 $bigIconSize: 80px;
-$bottomPosition: 100px;
+$bottomPosition: 250px;
 $time: 0.3s;
 
 //common style 
@@ -86,7 +86,6 @@ ul {
 		margin-left: 30px;
 		bottom: -40px;
 	}
-
 }
 
 #info-bar {
@@ -95,7 +94,7 @@ ul {
 	overflow: hidden;
 	position: absolute;
 	left: 50%;
-	bottom: 0px;
+	bottom: 1/2 * $iconSize;
 	@include css3(border-radius, 50%);
 	background-color: #7e7e7e;
 	@include css3(transition,all $time);
@@ -171,5 +170,17 @@ ul {
 		img {
 			margin-top: 5px;
 		}
+	}
+
+	li .unread {
+		display: block;
+		width: 20px;
+		height: 20px;
+		@include css3(border-radius,50%);
+		background-color:red;
+		position: absolute;
+		top: -5px;
+		right: -3px;
+		color: #fff;
 	}
 }

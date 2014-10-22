@@ -17,7 +17,7 @@ ul {
   width: 35px;
   height: 35px;
   margin-left: -17.5px;
-  bottom: 100px;
+  bottom: 250px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -33,7 +33,7 @@ ul {
   background: url(../../assets/images/atplus_green.png) no-repeat center;
   width: 80px;
   height: 80px;
-  bottom: 77.5px;
+  bottom: 227.5px;
   margin-left: -40px;
   background-color: #303f9f; }
   #button:hover #info-bar {
@@ -84,7 +84,7 @@ ul {
   overflow: hidden;
   position: absolute;
   left: 50%;
-  bottom: 0px;
+  bottom: 17.5px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -166,5 +166,19 @@ ul {
   transition: all 0.3s; }
   #control-ring-container li img {
     margin-top: 5px; }
+#control-ring-container li .unread {
+  display: block;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
