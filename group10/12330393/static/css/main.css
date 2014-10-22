@@ -29,52 +29,59 @@ ul {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
-#button:hover .apb {
-  background: url(../../assets/images/atplus_green.png) no-repeat center;
-  width: 80px;
-  height: 80px;
-  bottom: 77.5px;
-  margin-left: -40px;
-  background-color: #303f9f; }
-#button:hover #info-bar {
-  width: 130px;
-  height: 130px;
-  bottom: 165px;
-  margin-left: -65px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
-#button:hover #control-ring-container {
-  opacity: 1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
-#button:hover #control-ring li {
-  opacity: 1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s; }
-#button:hover .mask {
-  margin-left: -105px;
-  bottom: 145px; }
-#button:hover .history {
-  margin-left: -101px;
-  bottom: 95px; }
-#button:hover .message {
-  margin-left: -76px;
-  bottom: 50px; }
-#button:hover .setting {
-  margin-left: -27px;
-  bottom: 30px; }
-#button:hover .sign {
-  margin-left: 30px;
-  bottom: 40px; }
+#button:hover {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  bottom: 0px; }
+  #button:hover .apb {
+    background: url(../../assets/images/atplus_green.png) no-repeat center;
+    width: 80px;
+    height: 80px;
+    bottom: 77.5px;
+    margin-left: -40px;
+    background-color: #303f9f; }
+  #button:hover #info-bar {
+    width: 130px;
+    height: 130px;
+    bottom: 165px;
+    margin-left: -65px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  #button:hover #control-ring-container {
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  #button:hover #control-ring li {
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  #button:hover .mask {
+    margin-left: -105px;
+    bottom: 145px; }
+  #button:hover .history {
+    margin-left: -101px;
+    bottom: 95px; }
+  #button:hover .message {
+    margin-left: -76px;
+    bottom: 50px; }
+  #button:hover .setting {
+    margin-left: -27px;
+    bottom: 30px; }
+  #button:hover .sign {
+    margin-left: 30px;
+    bottom: 40px; }
 
 #info-bar {
   width: 0px;
@@ -164,5 +171,19 @@ ul {
   transition: all 0.3s; }
   #control-ring-container li img {
     margin-top: 5px; }
+#control-ring-container li .unread {
+  display: block;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

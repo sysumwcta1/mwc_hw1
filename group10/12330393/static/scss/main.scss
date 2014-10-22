@@ -43,6 +43,12 @@ ul {
 //when the mouse is on the button
 
 #button:hover {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	bottom: 0px;
 	.apb {
 		background: url(../../assets/images/atplus_green.png) no-repeat center;
 		width: $bigIconSize;
@@ -170,5 +176,16 @@ ul {
 		img {
 			margin-top: 5px;
 		}
+	}
+	li .unread {
+		display: block;
+		width: 20px;
+		height: 20px;
+		@include css3(border-radius,50%);
+		background-color:red;
+		position: absolute;
+		top: -5px;
+		right: -3px;
+		color: #fff;
 	}
 }
