@@ -9,6 +9,13 @@
 	left: $left;
 	top: $top;
 }
+//common variable for position,size and color
+$iconSize: 35px;
+$iconColor: #999fd3;
+$bigIconSize: 80px;
+$bottomPosition: 100px;
+$time: 0.3s;
+
 //common style 
 * {
 	margin: 0;
@@ -24,36 +31,62 @@ ul {
 
 #button {
 	background: url(../../assets/images/atplus_white.png) no-repeat center;
-	background-color: #999fd3;
-	width: 35px;
-	height: 35px;
+	background-color: $iconColor;
 	position: absolute;
-	bottom: 150px;
-	left: 48%;
+	left: 50%;
+	width:$iconSize;
+	height: $iconSize;
+	margin-left: - (1/2) * $iconSize;
+	bottom: $bottomPosition;
 	@include css3(border-radius,50%);
-	@include css3(transition,all 0.3s);
+	@include css3(transition,all $time);
 }
 
 #button:hover {
 	background: url(../../assets/images/atplus_green.png) no-repeat center;
-	width: 80px;
-	height: 80px;
-	bottom: 125px;
-	margin-left:-22px;
+	width: $bigIconSize;
+	height: $bigIconSize;
+	bottom:  $bottomPosition - ($bigIconSize - $iconSize) / 2;
+	margin-left: - (1/2) * $bigIconSize;
 	background-color: rgba(48, 63, 159, 1);
 	#info-bar {
 		width: 130px;
 		height: 130px;
 		bottom: 90px;
-		left: -34.5%;
-		@include css3(transition,all 0.3s);
+		margin-left: -65px;
+		@include css3(transition,all $time);
 	}
 	#control-ring-container {
 		width: 100px;
 		height: 250px;
 		opacity: 1;
-		@include css3(transition,all 0.3s);
+		@include css3(transition,all $time);
 	}
+	#control-ring li {
+		opacity: 1;
+		@include css3(transition,all $time);
+	}
+	.mask {
+		margin-left: -105px;
+		bottom: 65px;
+	}
+	.history {
+		margin-left: -101px;
+		bottom: 15px;
+	}
+	.message {
+		margin-left: -76px;
+		bottom:-30px;
+	}
+	.setting {
+		margin-left: -27px;
+		bottom: -50px;
+	}
+	.sign {
+		margin-left: 30px;
+		bottom: -40px;
+	}
+
 }
 
 #info-bar {
@@ -62,9 +95,10 @@ ul {
 	overflow: hidden;
 	position: absolute;
 	left: 50%;
-	bottom: 150px;
+	bottom: 0px;
 	@include css3(border-radius, 50%);
 	background-color: #7e7e7e;
+	@include css3(transition,all $time);
 	.info {
 		height: 100%;
 	}
@@ -123,38 +157,19 @@ ul {
 	}
 }
 #control-ring-container {
-	@include css3(transition,all 0.3s);
-	width: 0px;
-	height: 0px;
-	opacity: 0;
-
-	#control-ring {
-		position: relative;
-	}
 	li {
-		width: 35px;
-		height: 35px;
+		width: $iconSize;
+		height: $iconSize;
+		background-color: $iconColor;
 		border-radius: 50%;
-		background-color: gray;
+		position: absolute;
+		left:50%;
+		bottom: 0px;
+		margin-left: - (1/2) * $iconSize;
+		opacity: 0;
+		@include css3(transition,all $time);
+		img {
+			margin-top: 5px;
+		}
 	}
-		.mask {
-			@include setposition(absolute,-75px,-20px);
-		}
-		.history {
-			@include setposition(absolute,-66px,27px);
-		}
-		.setting {
-			@include setposition(absolute,-40px, 69px);
-		}
-
-		.message {
-			@include setposition(absolute,5,96px);
-		}
-		.sign {
-			@include setposition(absolute,62px,102px);
-		}
 }
-
-
-
-
