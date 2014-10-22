@@ -13,8 +13,9 @@
 $iconSize: 35px;
 $iconColor: #999fd3;
 $bigIconSize: 80px;
-$bottomPosition: 250px;
-$time: 0.3s;
+
+$bottomPosition: 100px;
+$time: .3s;
 
 //common style 
 * {
@@ -28,8 +29,7 @@ body {
 ul {
 	list-style: none;
 }
-
-#button {
+.apb {
 	background: url(../../assets/images/atplus_white.png) no-repeat center;
 	background-color: $iconColor;
 	position: absolute;
@@ -41,24 +41,31 @@ ul {
 	@include css3(border-radius,50%);
 	@include css3(transition,all $time);
 }
+//when the mouse is on the button
 
 #button:hover {
-	background: url(../../assets/images/atplus_green.png) no-repeat center;
-	width: $bigIconSize;
-	height: $bigIconSize;
-	bottom:  $bottomPosition - ($bigIconSize - $iconSize) / 2;
-	margin-left: - (1/2) * $bigIconSize;
-	background-color: rgba(48, 63, 159, 1);
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	bottom: 0px;
+	.apb {
+		background: url(../../assets/images/atplus_green.png) no-repeat center;
+		width: $bigIconSize;
+		height: $bigIconSize;
+		bottom:  $bottomPosition - ($bigIconSize - $iconSize) / 2;
+		margin-left: - (1/2) * $bigIconSize;
+		background-color: rgba(48, 63, 159, 1);
+	}
 	#info-bar {
 		width: 130px;
 		height: 130px;
-		bottom: 90px;
+		bottom: $bottomPosition + 65px;
 		margin-left: -65px;
 		@include css3(transition,all $time);
 	}
 	#control-ring-container {
-		width: 100px;
-		height: 250px;
 		opacity: 1;
 		@include css3(transition,all $time);
 	}
@@ -68,23 +75,23 @@ ul {
 	}
 	.mask {
 		margin-left: -105px;
-		bottom: 65px;
+		bottom: $bottomPosition + 45px;
 	}
 	.history {
 		margin-left: -101px;
-		bottom: 15px;
+		bottom: $bottomPosition - 5px;
 	}
 	.message {
 		margin-left: -76px;
-		bottom:-30px;
+		bottom:$bottomPosition - 50px;
 	}
 	.setting {
 		margin-left: -27px;
-		bottom: -50px;
+		bottom: $bottomPosition - 70px;
 	}
 	.sign {
 		margin-left: 30px;
-		bottom: -40px;
+		bottom: $bottomPosition - 60px;
 	}
 }
 
@@ -94,9 +101,9 @@ ul {
 	overflow: hidden;
 	position: absolute;
 	left: 50%;
-	bottom: 1/2 * $iconSize;
-	@include css3(border-radius, 50%);
+	bottom: $bottomPosition;
 	background-color: #7e7e7e;
+	@include css3(border-radius, 50%);
 	@include css3(transition,all $time);
 	.info {
 		height: 100%;
@@ -163,7 +170,7 @@ ul {
 		border-radius: 50%;
 		position: absolute;
 		left:50%;
-		bottom: 0px;
+		bottom: $bottomPosition;
 		margin-left: - (1/2) * $iconSize;
 		opacity: 0;
 		@include css3(transition,all $time);
@@ -171,7 +178,6 @@ ul {
 			margin-top: 5px;
 		}
 	}
-
 	li .unread {
 		display: block;
 		width: 20px;
