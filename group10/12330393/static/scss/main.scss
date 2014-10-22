@@ -1,0 +1,160 @@
+// use for CSS3
+@mixin css3($property, $value) {
+    @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+        #{$prefix}#{$property}: $value;
+    }
+}
+@mixin setposition($property,$left,$top) {
+	position: $property;
+	left: $left;
+	top: $top;
+}
+//common style 
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Microsoft YaHei";
+	text-align:center;
+}
+ul {
+	list-style: none;
+}
+
+#button {
+	background: url(../../assets/images/atplus_white.png) no-repeat center;
+	background-color: #999fd3;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	bottom: 150px;
+	left: 48%;
+	@include css3(border-radius,50%);
+	@include css3(transition,all 0.3s);
+}
+
+#button:hover {
+	background: url(../../assets/images/atplus_green.png) no-repeat center;
+	width: 80px;
+	height: 80px;
+	bottom: 125px;
+	margin-left:-22px;
+	background-color: rgba(48, 63, 159, 1);
+	#info-bar {
+		width: 130px;
+		height: 130px;
+		bottom: 90px;
+		left: -34.5%;
+		@include css3(transition,all 0.3s);
+	}
+	#control-ring-container {
+		width: 100px;
+		height: 250px;
+		opacity: 1;
+		@include css3(transition,all 0.3s);
+	}
+}
+
+#info-bar {
+	width: 0px;
+	height:0px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	bottom: 150px;
+	@include css3(border-radius, 50%);
+	background-color: #7e7e7e;
+	.info {
+		height: 100%;
+	}
+	ul {
+		height: 100%;
+		li {
+			position: relative;
+		}
+	}
+	.page {
+		color: #fff;
+		font-weight: bold;
+		height: 33%;
+		@at-root.user {
+			img {
+				@include setposition(absolute,35px,10px);
+			}
+			span {
+				@include setposition(absolute,65px,7px);
+			}
+		}
+		@at-root.comment {
+			font-size: 29px;
+			img {
+				@include setposition(absolute,25px,10px);
+			}
+			span {
+				@include setposition(absolute,60px,0px);
+			}
+		}
+	}
+	.mine {
+		display: block;
+		width: 50%;
+		height: 33%;
+		float: left;
+		color: #079E6E;
+		font-size: 17px;
+		font-weight: bold;	
+		@at-root.posted {
+			img {
+				@include setposition(absolute,21px,0px);
+			}
+			span {
+				@include setposition(absolute,50px,-3px);
+			}
+		}
+		@at-root.like {
+			img {
+				@include setposition(absolute,0px,0px);
+			}
+			span {
+				@include setposition(absolute,30px,-3px);
+			}
+		}
+	}
+}
+#control-ring-container {
+	@include css3(transition,all 0.3s);
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+
+	#control-ring {
+		position: relative;
+	}
+	li {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		background-color: gray;
+	}
+		.mask {
+			@include setposition(absolute,-75px,-20px);
+		}
+		.history {
+			@include setposition(absolute,-66px,27px);
+		}
+		.setting {
+			@include setposition(absolute,-40px, 69px);
+		}
+
+		.message {
+			@include setposition(absolute,5,96px);
+		}
+		.sign {
+			@include setposition(absolute,62px,102px);
+		}
+}
+
+
+
+

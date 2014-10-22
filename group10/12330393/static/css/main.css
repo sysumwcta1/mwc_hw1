@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Microsoft YaHei";
+  text-align: center; }
+
+ul {
+  list-style: none; }
+
+#button {
+  background: url(../../assets/images/atplus_white.png) no-repeat center;
+  background-color: #999fd3;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 150px;
+  left: 48%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+#button:hover {
+  background: url(../../assets/images/atplus_green.png) no-repeat center;
+  width: 80px;
+  height: 80px;
+  bottom: 125px;
+  margin-left: -22px;
+  background-color: #303f9f; }
+  #button:hover #info-bar {
+    width: 130px;
+    height: 130px;
+    bottom: 90px;
+    left: -34.5%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  #button:hover #control-ring-container {
+    width: 100px;
+    height: 250px;
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+
+#info-bar {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  bottom: 150px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #7e7e7e; }
+  #info-bar .info {
+    height: 100%; }
+  #info-bar ul {
+    height: 100%; }
+    #info-bar ul li {
+      position: relative; }
+  #info-bar .page {
+    color: #fff;
+    font-weight: bold;
+    height: 33%; }
+    .user img {
+      position: absolute;
+      left: 35px;
+      top: 10px; }
+    .user span {
+      position: absolute;
+      left: 65px;
+      top: 7px; }
+    .comment {
+      font-size: 29px; }
+      .comment img {
+        position: absolute;
+        left: 25px;
+        top: 10px; }
+      .comment span {
+        position: absolute;
+        left: 60px;
+        top: 0px; }
+  #info-bar .mine {
+    display: block;
+    width: 50%;
+    height: 33%;
+    float: left;
+    color: #079E6E;
+    font-size: 17px;
+    font-weight: bold; }
+    .posted img {
+      position: absolute;
+      left: 21px;
+      top: 0px; }
+    .posted span {
+      position: absolute;
+      left: 50px;
+      top: -3px; }
+    .like img {
+      position: absolute;
+      left: 0px;
+      top: 0px; }
+    .like span {
+      position: absolute;
+      left: 30px;
+      top: -3px; }
+
+#control-ring-container {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0px;
+  height: 0px;
+  opacity: 0; }
+  #control-ring-container #control-ring {
+    position: relative; }
+  #control-ring-container li {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: gray; }
+  #control-ring-container .mask {
+    position: absolute;
+    left: -75px;
+    top: -20px; }
+  #control-ring-container .history {
+    position: absolute;
+    left: -66px;
+    top: 27px; }
+  #control-ring-container .setting {
+    position: absolute;
+    left: -40px;
+    top: 69px; }
+  #control-ring-container .message {
+    position: absolute;
+    left: 5;
+    top: 96px; }
+  #control-ring-container .sign {
+    position: absolute;
+    left: 62px;
+    top: 102px; }
