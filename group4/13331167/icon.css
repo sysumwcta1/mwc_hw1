@@ -1,9 +1,9 @@
 #bottom-positioner {
+	margin: 0 auto;
 	height: 5px;
 	width: 5px;
-	position: fixed;
-	top: 50%;
-	left: 50%;
+	position: relative;
+	top: 300px;
 }
 
 #button {
@@ -24,24 +24,24 @@
 }
 
 #button:hover {
-	height: 40px;
-	width: 40px;
-	border: 8px solid rgba(48, 63, 159, 1);
+	height: 35px;
+	width: 35px;
+	border: 5px solid rgba(48, 63, 159, 1);
+	border-radius: 100%;
 	background-color: rgba(48, 63, 159, 1);
 	background-image: url(assets/images/atplus_green.png);
 }
 
 #info-bar {
-	height: 0px;
-	width: 0px;
-	overflow: hidden;
+	height: 130px;
+	width: 130px;
 	border-radius: 100%;
 	background-color: #838585;
 	font-family: Arial;
 	color: white;
 	position: relative;
-	top: 25px;
-    left: 0px;
+	top: -100px;
+    left: -50px;
 }
 
 #info-bar ul {
@@ -50,54 +50,56 @@
 
 #info-bar ul li span{
 	font-weight: bold;
-	position: absolute;
+	position: relative;
 }
 
 #info-bar img {
-	position: absolute;
+	margin: 6px;
 }
 
-.pageuser img {
-	top: 7px;
+.pageuser {
+	position: relative;
+	top: 5px;
 }
 
 .pageuser span{
-	top: 9px;
-	left: 70px;
+	top: -10px;
 }
 
-.pagecomment img {
-	left: 30px;
-	top: 45px;
-}
-
-.pagecomment span {
-	left: 63px;
-	top: 40px;
+.pagecomment {
 	font-size: 30px;
 }
 
-.mineposted img {
-	top: 80px;
-	left: 20px;
-	
+.pagecomment img {
+	position: relative;
+	left: -10px;
+	top: 5px;
+}
+
+.pagecomment span {
+	left: -5px;
+}
+
+.mineposted {
+	float: left;
+	margin-left: 0px;
+	position: relative;
+	left: -20px;
+	color: #44BD8A;
 }
 
 .mineposted span {
-	top: 82px;
-	left: 47px;
-	color: #44BD8A;
+	top: -10px;
 }
 
-.minelike img {
-	top: 80px;
-	left: 65px;
+.minelike {
+	position: relative;
+	left: -13px;
+	color: #44BD8A;
 }
 
 .minelike span {
-	top: 83px;
-	left: 95px;
-	color: #44BD8A;
+	top: -12px;
 }
 
 #control-ring-container ul {
@@ -106,17 +108,17 @@
 
 #mask {
 	background-image: url(assets/images/nomask.png);
-	
+	top: -160px;
 }
 
 #history {
 	background-image: url(assets/images/history.png);
-	top: -33px;
+	top: -180px;
 }
 
 #message {
 	background-image: url(assets/images/message.png);
-	top: -67px;
+	top: -200px;
 }
 
 #message div {
@@ -136,12 +138,12 @@
 
 #setting {
 	background-image: url(assets/images/setting.png);
-	top: -100px;
+	top: -240px;
 }
 
 #signin {
 	background-image: url(assets/images/signin.png);
-	top: -135px;
+	top: -280px;
 }
 
 .circle {
@@ -168,44 +170,42 @@
 
 
 #button:hover .info {
-	height: 130px;
-	width: 130px;
 	opacity: 1;
 	visibility: visible;
 }
 
 #button:hover #info-bar {
-	transform: translate(-30px, -140px);
-	-webkit-transform: translate(-40px, -170px);
-	-moz-transform: translate(-30px, -140px);
+	transform: translate(50px, -50px);
+	-webkit-transform: translate(50px, -50px);
+	-moz-transform: translate(50px, -50px);
 }
 
 #button:hover #mask {
-	transform: translate(-60px, -160px);
-	-webkit-transform: translate(-60px, -160px);
-	-moz-transform: translate(-60px, -160px);
+	transform: translate(-35px, -25px);
+	-webkit-transform: translate(-35px, -25px);
+	-moz-transform: translate(-35px, -25px);
 }
 
 #button:hover #history {
-	transform: translate(-70px, -123px);
-	-webkit-transform: translate(-70px, -123px);
-	-moz-transform: translate(-70px, -123px);
+	transform: translate(-50px);
+	-webkit-transform: translate(-50px);
+	-moz-transform: translate(-50px);
 }
 
 #button:hover #message {
-	transform: translate(-60px, -85px);
-	-webkit-transform: translate(-60px, -85px);
-	-moz-transform: translate(-60px, -85px);
+	transform: translate(-35px, 25px);
+	-webkit-transform: translate(-35px, 25px);
+	-moz-transform: translate(-35px, 25px);
 }
 
 #button:hover #setting {
-	transform: translate(-25px, -65px);
-	-webkit-transform: translate(-25px, -65px);
-	-moz-transform: translate(-25px, -65px);
+	transform: translate(10px, 38px);
+	-webkit-transform: translate(10px, 38px);
+	-moz-transform: translate(10px, 38px);
 }
 
 #button:hover #signin {
 	transform: translate(45px, 20px);
-	-webkit-transform: translate(15px, -70px);
+	-webkit-transform: translate(45px, 20px);
 	-moz-transform: translate(45px, 20px);
 }
