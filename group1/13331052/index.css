@@ -2,11 +2,12 @@ body {
 	background-color: white;
 }
 
-.icon {
+
+
+#button {
 	width:30px;
 	height:30px;
 	border-radius: 30px;
-	overflow:hidden;
 
     background-image:url(assets/images/atplus_white.png);
    	background-repeat: no-repeat;
@@ -17,13 +18,16 @@ body {
     position: absolute;
     bottom: 100px;
     left: 650px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition:all 0.5s;
+    transition: all 0.5s;
 }
 
-.icon:hover {
+#button:hover {
 	width:60px;
 	height: 60px;
 	border-radius: 60px;
-	overflow:hidden;
 
     background-image:url(assets/images/atplus_green.png);
     background-repeat:no-repeat;
@@ -36,10 +40,10 @@ body {
 }
 
 .info {
-	width:120px;
-	height:120px;
-	border-radius: 120px;
-	overflow:hidden;
+	width:0px;
+	height:0px;
+	border-radius: 0px;
+	visibility:hidden;
 
    	background-repeat: no-repeat;
     background-color: gray;
@@ -47,9 +51,30 @@ body {
     background-position: 50% 50%;
 
     position: absolute;
-    bottom: 160px;
-    left: 610px;
- 
+    bottom: 0px;
+    left: 0px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition:all 0.5s;
+    transition: all 0.5s;
+
+}
+#button:hover .info {
+    width:120px;
+    height:120px;
+    border-radius: 120px;
+    visibility:visible;
+    opacity: 1;
+
+    background-repeat: no-repeat;
+    background-color: gray;
+    background-size: 50px;
+    background-position: 50% 50%;
+
+    position: absolute;
+    bottom: 100px;
+    left: -25px;
+
 }
 .page_user {
     position: absolute;
@@ -72,20 +97,41 @@ body {
     left: 60px;
 }
 #control-ring-container {
-    display: block;
-    width:150px;
-	height:150px;
-	border-radius: 150px;
-	overflow:hidden;
+    width:0px;
+	height:0px;
+	border-radius: 0px;
+	visibility: hidden;
+    overflow: hidden;
+    
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 
-	background-repeat: no-repeat;
+    -webkit-transition: all 0.5s;
+    -moz-transition:all 0.5s;
+    transition: all 0.5s;
+
+    z-index: -1;
+}
+#button:hover #control-ring-container {
+    width:150px;
+    height:150px;
+    border-radius: 150px;
+
+    visibility: visible;
+    overflow: hidden;
+    opacity: 1;
+
+    background-repeat: no-repeat;
     background-color: white;
     background-size: 50px;
     background-position: 50% 50%;
 
     position: absolute;
-    bottom: 10px;
-    left: 560px;
+    bottom: -119px;
+    left: -108px;
+
+    z-index: -1;
 }
 
 .mask_button {
