@@ -9,7 +9,7 @@
 	border-radius:50%;
 	background-color: rgba(124,125,126,0.9);
 	-webkit-transition:color,background-color,transform 4s;
-	transtion:color,background-color,transform 4s;
+	transition:color,background-color,transform 4s;
 	transform:scale(0.5,0.5);
 }
 .atplus2 {
@@ -75,7 +75,7 @@ span.b {
 	top:-2px;
 	left:5px;
 	color: green;
-	font-size: :20px;
+	font-size:20px;
 	font-weight: bold;
 }
 span.c {
