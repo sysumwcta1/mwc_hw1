@@ -15,7 +15,7 @@
 	position: relative;
 	left: 48%;
 	top: 450px;
-	/*-moz-border-radius: 20px;*/
+	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px;
 	border-radius: 100px;
 	background-position: center;
@@ -292,19 +292,14 @@ div.info > ul > li {
 }
 
 .message.button .unread {
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
 	color: white;
+	font-size: 10pt;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	position: absolute;
 	right: 0px;
 	background-color: red;
-}
-
-#button:hover .message.button .unread {
-	-moz-transform: translate(8px, -4px);
-	-webkit-transform: translate(8px, -4px);
-	transform: translate(8px, -4px);
 }
