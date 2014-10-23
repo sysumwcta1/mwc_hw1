@@ -1,0 +1,235 @@
+/*
+Author: linyiting;
+改进：
+    (1):根据建议，调整了按钮的位置;
+    (2):根据建议，减少了按钮变化的时间;
+    (3):根据建议，修改了部分属性的实现方法;
+    (4):根据建议，调整了部分选择器，减少代码的冗余重复;
+    (5):根据建议，调整了css代码的结构，提高了代码的可读性;
+    (4):调整各个部件的位置，优化了按钮的界面显示效果;
+*/
+
+div#at-plus-container {
+	position: fixed;
+    left: 50%;
+	bottom: 25%;
+}
+
+div#button {
+    width: 30px;
+    height: 30px;
+    background: rgba(155, 155, 212, 1);
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background-image: url("assets/images/atplus_white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    transition: all 0.8s 0.2s;
+    -moz-transition: all 0.8s 0.2s;
+    -webkit-transition: all 0.8s 0.2s;
+}
+
+div#button:hover {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    background: rgba(48,63,159,1);
+    transform: translate(-20px, -20px);
+    -moz-transform: translate(-20px, -20px);
+    -webkit-transform: translate(-20px, -20px);
+    background-image: url("assets/images/atplus_green.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%, 80%;
+}
+
+div#button .info {
+    width: 130px;
+    height: 130px;
+    -moz-border-radius: 65px;
+    -webkit-border-radius: 65px;
+    border-radius: 65px;
+    transform: scale(0.2, 0.2);
+    -moz-transform: scale(0.2, 0.2);
+    -webkit-transform: scale(0.2, 0.2);
+    opacity: 0;
+    background: rgba(125, 125, 125, 1);
+    position: relative;
+    bottom: 65px;
+    right: 50px;
+    transition: all 0.8 0.2s;
+    -moz-transition: all 0.8s 0.2s;
+    -webkit-transition: all 0.8s 0.2s;
+}
+
+ul {
+    list-style: none;
+    font-family: Arial;
+    height: 0;
+}
+
+li.page-user {
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+    right: 2px;
+}
+
+li.page-user span {
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    position: relative;
+    left: 5px
+}
+
+li.page-comment {
+    margin-left: 0px;
+    position: relative;
+    top: 10px;
+}
+
+li.page-comment span {
+    color: white;
+    font-size: 25pt;
+    font-weight: bold;
+    position: relative;
+    left: 10px
+}
+
+li.mine-posted {
+    float: left;
+    margin-left: -20px;
+    position: relative;
+    top: 15px;
+    left: 5px;
+}
+
+li.mine-posted span, li.mine-like span {
+    color: #079E6E;
+    font-size: 15pt;
+    font-weight: bolder;
+    position: relative;
+    left: 5px;
+    top: -5px;
+}
+
+li.mine-like {
+    margin-left: -20px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+div#button:hover .info {
+    opacity: 1;
+    right: 27px;
+    bottom: 50px;
+    transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: translate(-10px, -120px);
+    -moz-transform: translate(-10px, -120px);
+    -webkit-transform: translate(-10px, -120px);
+}
+
+li.button {
+    width: 40px;
+    height: 40px;
+    background: rgba(125, 125, 125, 1);
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    position: relative;
+    right: 45px;
+	background-repeat: no-repeat;
+	background-position: center;
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    transition: all 0.8s 0.2s;
+    -moz-transition: all 0.8s 0.2s;
+    -webkit-transition: all 0.8s 0.2s;
+}
+
+li.mask {
+	background-image: url("assets/images/mask.png");
+    bottom: 170px;
+}
+
+li.history {
+	background-image: url("assets/images/history.png");
+    bottom: 210px;
+}
+
+li.message {
+	background-image: url("assets/images/message.png");
+    bottom: 245px;
+}
+
+span.unread {
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+	width: 18px;
+	height: 18px;
+	background-color: red;
+	-moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    text-align: center;
+    float: right;
+}
+
+li.setting {
+	background-image: url("assets/images/setting.png");
+    bottom: 285px;
+}
+
+li.sign {
+	background-image: url("assets/images/signin.png");
+    bottom: 330px;
+}
+
+div#button:hover li.button {
+    opacity: 1;
+    transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+}
+
+div#button:hover li.mask {
+    transform: translate(-50px, -30px);
+    -moz-transform: translate(-50px, -30px);
+    -webkit-transform: translate(-50px, -30px);
+}
+
+div#button:hover li.history {
+    transform: translate(-70px, 20px);
+    -moz-transform: translate(-70px, 20px);
+    -webkit-transform: translate(-70px, 20px);
+}
+
+div#button:hover li.message {
+    transform: translate(-50px, 60px);
+    -moz-transform: translate(-50px, 60px);
+    -webkit-transform: translate(-50px, 60px);
+}
+
+div#button:hover li.setting {
+    transform: translate(0px, 90px);
+    -moz-transform: translate(0px, 90px);
+    -webkit-transform: translate(0px, 90px);
+}
+
+div#button:hover li.sign {
+    transform: translate(60px, 80px);
+    -moz-transform: translate(60px, 80px);
+    -webkit-transform: translate(60px, 80px);
+}
