@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2014-10-18 18:31:40
 * @Last Modified by:   anchen
-* @Last Modified time: 2014-10-21 16:00:24
+* @Last Modified time: 2014-10-23 16:58:51
 */
 
 * {
@@ -74,35 +74,35 @@ ul {
     right: 0;
     bottom: 75%;
     margin: 0 auto;
+    overflow: hidden;
 }
 .page {
-    position: absolute;
+    position: relative;
     font-weight: 800;
     color: white;
 }
 .user {
+    line-height: 2.3em;
     top: 7%;
     left: 37%;
     font-size: 135%;
 }
 .comment {
+    line-height: 0.3em;
     top: 31%;
     left: 32%;
     font-size: 230%;
 }
 .mine {
-    position: absolute;
+    line-height: 3em;
+    position: relative;
+    display: inline;
     font-size: 135%;
     color: #079E6E;
     font-weight: 800;
 }
-.posted {
-    bottom: 10%;
-    left: 20%;
-}
-.like {
-    bottom: 10%;
-    right: 16%;
+.like, .posted {
+    left: 21%;
 }
 
 #control-ring-container {
@@ -125,25 +125,21 @@ ul {
 }
 .history {
     background-image: url("assets/images/history.png");
-    text-align: center;
     bottom: 37%;
     right: 80%;
 }
 .message {
     background-image: url("assets/images/message.png");
-    text-align: center;
     bottom: 17%;
     right: 69%;
 }
 .setting {
     background-image: url("assets/images/setting.png");
-    text-align: center;
     bottom: 5%;
     right: 49%;
 }
 .sign {
     background-image: url("assets/images/signout.png");
-    text-align: center;
     bottom: 6%;
     right: 26%;
 }
@@ -158,5 +154,4 @@ ul {
     text-align: center;
     font-weight: 900;
     color: white;
-    /*font-size: 80%;*/
 }
