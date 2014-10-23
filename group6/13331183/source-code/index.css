@@ -6,14 +6,14 @@ ul {
 }
 #info-bar {
 	position: absolute;
-	left: -2.6rem;
-	top: -7.5rem;
+	left: -0.4rem;
+	top: -0.3rem;
 	background: #909090;
-	width:5.5rem;
-	height: 5.5rem;
-	border-radius: 5.5rem;
+	width:1rem;
+	height: 1rem;
+	border-radius: 50%;
 	padding: 1rem 1rem;
-	visibility: hidden;
+	opacity: 0;
 	transition: all 0.5s;
 	transition-delay: 0.3s;
 }
@@ -41,34 +41,20 @@ span {
 	top: -0.08rem;
 	left: 1.9rem;
 }
-.user {
+#info-bar li {
 	position: absolute;
-	left: 2.6rem;
-	top: 0.8rem;
+	left: 0rem;
+	top: 0rem;
+	transition: all 0.5s;
+	transition-delay: 0.3s;
 }
-.comment {
-	position: absolute;
-	left: 1.7rem;
-	top: 2.8rem;
-}
-.posted {
-	position: absolute;
-	left: 1.3rem;
-	top: 4.9rem;
-}
-.like {
-	position: absolute;
-	left: 4.1rem;
-	top: 4.9rem;
-}
-
 #button {
 	position: absolute;
 	left: 12rem;
 	top: 8rem;
 	width:2.3rem;
 	height: 2.3rem;
-	border-radius: 2.3rem;
+	border-radius: 50%;
 	background-color: rgba(48, 63, 159, 1);
 	transition: all 0.5s;
 	transition-delay: 0.3s;
@@ -81,11 +67,11 @@ span {
    	background-repeat: no-repeat;
    	text-indent: 0.3rem;
 	width:2rem;
-	border-radius: 2rem;
+	border-radius: 50%;
 	position: absolute;
 	left: 0rem;
 	top: -0.2rem;
-	visibility: hidden;
+	opacity: 0;
 	transition: all 0.5s;
 	transition-delay: 0.3s;
 
@@ -125,7 +111,7 @@ span {
 	color: white;
 	width:1.2rem;
 	height: 1.2rem;
-	border-radius: 1.2rem;
+	border-radius: 50%;
 	position: absolute;
 	left: 1.4rem;
 	top: -0.5rem;
@@ -140,7 +126,6 @@ span {
 #button:hover {
 	width:4rem;
 	height: 4rem;
-	border-radius: 4rem;
 }
 #button:hover .icon {
 	width: 2.8rem;
@@ -150,33 +135,51 @@ span {
 	
 }
 #button:hover #info-bar{
-	visibility: visible;
+	opacity: 1.0;
 	left: -1.6rem;
 	top: -8.3rem;
+	width:5.5rem;
+	height: 5.5rem;
+}
+#button:hover .user {
+	left: 2.6rem;
+	top: 0.8rem;
+}
+#button:hover .comment {
+	left: 1.7rem;
+	top: 2.8rem;
+}
+#button:hover .posted {
+	left: 1.3rem;
+	top: 4.9rem;
+}
+#button:hover .like {
+	left: 4.1rem;
+	top: 4.9rem;
 }
 
 #button:hover .mask {
-	visibility: visible;
+	opacity: 1.0;
 	left: -4rem;
 	top: -1.4rem;
 }
 #button:hover .history {
-	visibility: visible;
+	opacity: 1.0;
 	left: -4.4rem;
 	top: 1.3rem;
 }
 #button:hover .message {
-	visibility: visible;
+	opacity: 1.0;
 	left: -3.1rem;
 	top: 3.9rem;
 }
 #button:hover .setting {
-	visibility: visible;
+	opacity: 1.0;
 	left: -0.6rem;
 	top: 5.3rem;
 }
 #button:hover .sign{
-	visibility: visible;
+	opacity: 1.0;
 	left: 2.3rem;
 	top: 5rem;
 }

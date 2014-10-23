@@ -8,7 +8,11 @@
 *    Email: eleveneat@gmail.com
 *    Copyright (C) 2014 All rights reserved.
 */
-
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
 body {
 }
 
@@ -33,45 +37,32 @@ body {
 	height: 27px;
 	margin: auto;
 	position: relative;
-	top: 106px;
+	top: 103px;
 }
 #button:hover {
-	width: 280px;
-	height: 280px;
-	position: relative;
-	top: 0px;
 }
 
 
 /* info-bar */
 #info-bar {
-	transition-property:   background-color;
-	-webkit-transition-property:   background-color;
-	transition-duration: 1s;
-	-webkit-transition-duration: 1s;
-	width: 1px;
-	height: 1px;
-	visibility: hidden;
-	overflow: hidden;
-	display: inline-block;
+	width: 0px;
+	height: 0px;
 }
-#button:hover #info-bar {
-	width: 115px;
-	height: 115px;
-	position: absolute;
-	left: 85px;
-	top:0px;
-	visibility: visible;
-	border-radius: 60px;
-	background-color: rgba(127, 127, 127, 1);
-}
+/*#button:hover #info-bar {
+}*/
 #info-bar li {
-	display: inline-block;
+	list-style-type: none;
+	position: relative;
 }
 .info {
-	width: 1px;
-	height: 1px;
+	width: 23px;
+	height: 23px;
 	overflow: hidden;
+	position: relative;
+	opacity: 0;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
 }
 
 #button:hover .info {
@@ -79,123 +70,129 @@ body {
 	height: 115px;
 	border-radius: 60px;
 	overflow: hidden;
+	background-color: rgba(127, 127, 127, 1);
+	opacity: 1;
+    transform: translate(-35px, -120px);
+    -moz-transform: translate(-35px, -120px);
+    -webkit-transform: translate(-35px, -120px);
 }
 .page-user {
 	position: absolute;
-	left:38px;
-	top: 15px;
+	left:-10px;
+	top: 10px;
 }
 .page-user span {
-	position: absolute;
-	left: 30px;
+	position: relative;
+	left: 12px;
+	bottom: 10px;
 	color: white;
 }
 .page-comment {
 	position: absolute;
-	left:30px;
-	top: 42px;
+	left:-8px;
+	top: 18px;
 }
 .page-comment span {
-	position: absolute;
-	left: 30px;
+	position: relative;
+	left: 25px;
 	top:-7px;
 	color: white;
 	font-size: 30px;
 }
 .mine-posted {
 	position: absolute;
-	left:15px;
-	top: 70px;
+	left: -28px;
+	top: 18px;
 }
 .mine-posted span {
-	position: absolute;
-	left: 25px;
+	position: relative;
+	left: 5px;
+	bottom: 6px;
 	color: rgba(39, 217, 133, 1);
 }
 .mine-plike {
 	position: absolute;
-	left:60px;
-	top: 70px;
+	left: 18px;
+	top: -7px;
 }
 .mine-plike span {
-	position: absolute;
-	left: 30px;
+	position: relative;
+	left: 8px;
+	bottom: 6px;
 	color: rgba(39, 217, 133, 1);
 }
 
 
 /* control ring container */
 #control-ring-container {
-	width: 1px;
-	height: 1px;
-	visibility: hidden;
+	width: 0px;
+	height: 0px;
 	overflow: hidden;
-	display: inline-block;
 }
-#button:hover #control-ring-container {
-	position: relative;
-	right: 20px;
-	top:92px;
-	visibility: visible;
-	width:140px;
-	height: 140px;
+/*#button:hover #control-ring-container {
+}*/
+#control-ring {
+	list-style-type: none;
 }
-#control-ring-container li {
-	display: inline-block;
+#control-ring > li {
+	position: absolute;
 }
 
  .mask-button {
-	transition-property: background-color;
-	-webkit-transition-property: background background-color;
-	transition-duration: 2s;
-	-webkit-transition-duration: 2s;
-}
-#button:hover .mask-button {
-	width: 32px;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+ 	width: 32px;
 	height: 32px;
 	border-radius: 20px;
 	background-color: rgba(86,86,86,1);
-	position: relative;
-	top: -6px;
-	right: 32px;
+	opacity: 0;
+}
+#button:hover .mask-button {
+    -moz-transform: translate(-50px, -20px);
+    -webkit-transform: translate(-50px, -20px);
+    transform: translate(-50px, -20px);
+    opacity: 1;
 }
 .mask-button img {
 	position: relative;
 	top:4px;
 }
 .history-button {
-	transition-property: background-color;
-	-webkit-transition-property: background-color;
-	transition-duration: 2s;
-	-webkit-transition-duration: 2s;
-}
-#button:hover .history-button {
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
 	width: 32px;
 	height: 32px;
-	border-radius: 17px;
+	border-radius: 20px;
 	background-color: rgba(86,86,86,1);
-	position: relative;
-	top: 28px;
-	right: 82px;
+	opacity: 0;
+}
+#button:hover .history-button {
+    -moz-transform: translate(-60px, 15px);
+    -webkit-transform: translate(-60px, 15px);
+    transform: translate(-60px, 15px);
+    opacity: 1;
 }
 .history-button img {
 	position: relative;
 	top: 4px;
 }
 .message-button {
-	transition-property: background-color;
-	-webkit-transition-property: background-color;
-	transition-duration: 2s;
-	-webkit-transition-duration: 2s;
-}
-#button:hover .message-button {
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
 	width: 32px;
 	height: 32px;
-	border-radius: 17px;
+	border-radius: 20px;
 	background-color: rgba(86,86,86,1);
-	position: relative;
-	top: 28px;
-	right: 28px;
+	opacity: 0;
+}
+#button:hover .message-button {
+    -moz-transform: translate(-42px, 47px);
+    -webkit-transform: translate(-42px, 47px);
+    transform: translate(-42px, 47px);
+    opacity: 1;
 }
 .message-button img {
 	position: relative;
@@ -207,49 +204,51 @@ body {
 	-webkit-transition-property: background-color;
 	transition-duration: 2s;
 	-webkit-transition-duration: 2s;
-}
-#button:hover .unread {
 	position: absolute;
 	bottom: 20px;
-	left: 18px;
+	left: 22px;
 	background-color: red;
 	color: white;
 	border-radius: 17px;
 	overflow: hidden;
+	width: 15px;
+	height: 15px;
 }
 .setting-button {
-	transition-property: background-color;
-	-webkit-transition-property: background-color;
-	transition-duration: 2s;
-	-webkit-transition-duration: 2s;
-}
-#button:hover .setting-button {
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
 	width: 32px;
 	height: 32px;
-	border-radius: 17px;
+	border-radius: 20px;
 	background-color: rgba(86,86,86,1);
-	position: relative;
-	top: 49px;
-	right: 32px;
+	opacity: 0;
+}
+#button:hover .setting-button {
+    -moz-transform: translate(-5px, 60px);
+    -webkit-transform: translate(-5px, 60px);
+    transform: translate(-5px, 60px);
+    opacity: 1;
 }
 .setting-button img {
 	position: relative;
 	top:4px;
 }
 .sign-button {
-	transition-property: background-color;
-	-webkit-transition-property: background-color;
-	transition-duration: 2s;
-	-webkit-transition-duration: 2s;
-}
-#button:hover .sign-button {
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
 	width: 32px;
 	height: 32px;
-	border-radius: 17px;
+	border-radius: 20px;
 	background-color: rgba(86,86,86,1);
-	position: relative;
-	top: 15px;
-	right: -24px;
+	opacity: 0;
+}
+#button:hover .sign-button {
+    -moz-transform: translate(33px, 58px);
+    -webkit-transform: translate(33px, 58px);
+    transform: translate(33px, 58px);
+    opacity: 1;
 }
 .sign-button img {
 	position: relative;
@@ -274,8 +273,6 @@ body {
 	height: 42px;
 	background-color: rgba(48, 63, 159, 1);
 	border-radius:25px;
-	position: relative;
-	bottom: 20px;
 }
 .icon {
 	width: 23px;
