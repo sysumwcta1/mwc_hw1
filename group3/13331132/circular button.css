@@ -12,6 +12,11 @@
 	height: 20px;
 	border-radius: 100px;
 	background-color: gray;
+	-webkit-transition: opacity 1s, transform .5s cubic-bezier(.1,.1,.1,4) 0s;
+	-moz-transition: transform .5s cubic-bezier(.1,.1,.1,4) 0s, opacity .5s;
+    -o-transition: transform .5s cubic-bezier(.1,.1,.1,4) 0s, opacity .5s;
+    -ms-transition: transform .5s cubic-bezier(.1,.1,.1,4) 0s, opacity .5s;
+    transition: transform .5s cubic-bezier(0.1,0.1,0.1,4) 0s, opacity 1s;
 }
 
 .green_at {
@@ -23,12 +28,17 @@
 	border-radius: 100px;
 	background-color: rgba(48,63,159,1);
 	transform: scale(0.1, 0.1);
+	-webkit-transition: transform .5s;
+	-moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    -ms-transition: transform .5s;
+    transition: transform .5s;
 }
 
 .green_a {
 	position: absolute;
-	left: 48%;
-	top: 77.5%;
+	left: 48.2%;
+	top: 77.9%;
 }
 
 .mask {
@@ -41,7 +51,13 @@
 	//left: -50px;
 	//top: 10px;
 	transform: scale(0.1, 0.1);
-	top: 50px;
+	top: 55px;
+	left: 10px;
+	-webkit-transition: transform .5s;
+	-moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    -ms-transition: transform .5s;
+    transition: transform .5s;
 }
 
 .history {
@@ -55,6 +71,12 @@
 	//top: 15px;
 	transform: scale(0.1, 0.1);
 	top: 20px;
+	left: 10px;
+	-webkit-transition: transform .5s;
+	-moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    -ms-transition: transform .5s;
+    transition: transform .5s;
 }
 
 .message {
@@ -67,7 +89,13 @@
 	//left: -45px;
 	//top: 19px;
 	transform: scale(0.1, 0.1);
-	top: -10px;
+	top: -12px;
+	left: 10px;
+	-webkit-transition: transform .5s;
+	-moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    -ms-transition: transform .5s;
+    transition: transform .5s;
 }
 .message span {
 	padding: 3px;
@@ -96,7 +124,13 @@
 	//left: -10px;
 	//top: 10px;
 	transform: scale(0.1, 0.1);
-	top: -45px;
+	top: -50px;
+	left: 10px;
+	-webkit-transition: transform .5s;
+	-moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    -ms-transition: transform .5s;
+    transition: transform .5s;
 }
 
 .signin {
@@ -109,7 +143,13 @@
 	//left: 35px;
 	//top: -23px;
 	transform: scale(0.1, 0.1);
-	top: -75px;
+	top: -85px;
+	left: 10px;
+	-webkit-transition: transform .5s;
+	-moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    -ms-transition: transform .5s;
+    transition: transform .5s;
 }
 
 .control-ring-container {
@@ -192,87 +232,52 @@ ul {
 	border-radius: 100px;
 	background-color: #666666;
 	position: absolute;
-	left: 605px;
-	top: 485px;
+	left: 44.65%;
+	top: 71%;
 	-webkit-transform: scale(0.1,0.1);
+	-webkit-transition: transform .5s;
+	-moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    -ms-transition: transform .5s;
+    transition: transform .5s;
 }
 
 
 .trans {
 	opacity: 0;
-	visibility: hidden;
+	-webkit-transition: opacity .8s, transform .5s;
+	-moz-transition: transform .5s, opacity .8s;
+    -o-transition: transform .5s, opacity .8s;
+    -ms-transition: transform .5s, opacity .8s;
+    transition: transform .5s, opacity .8s;
+    transition-delay: .2s;
 }
 
 .whole:hover .trans {
 	opacity: 1;
-	-webkit-transition: opacity 1.5s;
-	-moz-transition: transform 1.5s;
-    -o-transition: transform 1.5s;
-    -ms-transition: transform 1.5s;
-    transition: transform 1.5s;
-	visibility: visible;
 }
-.whole:hover .white_a{
-	opacity:  0;
-	-webkit-transition: opacity 1s
-	-moz-transition: transform 1s;
-    -o-transition: transform 1s;
-    -ms-transition: transform 1s;
-    transition: transform 1s;
+.whole:hover .white_at{
+	opacity: 0;
+	transform: scale(1.2, 1.2);
 }
 .whole:hover .green_at{
 	transform: scale(1, 1);
-	-webkit-transition: transform 1.5s;
-	-moz-transition: transform 1.5s;
-    -o-transition: transform 1.5s;
-    -ms-transition: transform 1.5s;
-    transition: transform 1.5s;
 }
 .whole:hover .info {
-	transform: scale(1,1) translate(0, -150px);
-	-webkit-transition: transform 1.5s;
-	-moz-transition: transform 1.5s;
-    -o-transition: transform 1.5s;
-    -ms-transition: transform 1.5s;
-    transition: transform 1.5s;
+	transform: scale(1,1) translate(0, -115px);
 }
 .whole:hover .mask {
-	transform : scale(1, 1) translate(-50px, -40px);
-	-webkit-transition: transform 1.5s;
-	-moz-transition: transform 1.5s;
-    -o-transition: transform 1.5s;
-    -ms-transition: transform 1.5s;
-    transition: transform 1.5s;
+	transform : scale(1, 1) translate(-60px, -45px);
 }
 .whole:hover .history {
-	transform : scale(1, 1) translate(-58px, -5px);
-	-webkit-transition: transform 1.5s;
-	-moz-transition: transform 1.5s;
-    -o-transition: transform 1.5s;
-    -ms-transition: transform 1.5s;
-    transition: transform 1.5s;
+	transform : scale(1, 1) translate(-68px, -5px);
 }
 .whole:hover .message {
-	transform : scale(1, 1) translate(-45px, 29px);
-	-webkit-transition: transform 1.5s;
-	-moz-transition: transform 1.5s;
-    -o-transition: transform 1.5s;
-    -ms-transition: transform 1.5s;
-    transition: transform 1.5s;
+	transform : scale(1, 1) translate(-55px, 31px);
 }
 .whole:hover .setting {
-	transform : scale(1, 1) translate(-10px, 55px);
-	-webkit-transition: transform 1.5s;
-	-moz-transition: transform 1.5s;
-    -o-transition: transform 1.5s;
-    -ms-transition: transform 1.5s;
-    transition: transform 1.5s;
+	transform : scale(1, 1) translate(-20px, 60px);
 }
 .whole:hover .signin {
-	transform : scale(1, 1) translate(35px, 52px);
-	-webkit-transition: transform 1.5s;
-	-moz-transition: transform 1.5s;
-    -o-transition: transform 1.5s;
-    -ms-transition: transform 1.5s;
-    transition: transform 1.5s;
+	transform : scale(1, 1) translate(25px, 62px);
 }
