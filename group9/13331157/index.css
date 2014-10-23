@@ -1,4 +1,4 @@
-div#at-plus-container {
+div#at-plus-container {		//这里定位需要注意下，要相对浏览器窗口居中和在浏览器底部，考虑用fixed定位
 	position: absolute;
 	top: 200px;
 	left: 800px;
@@ -23,7 +23,7 @@ div#button {
                 background-image 1s 0.6s, background 1s 0.6s;
 }
 div#button #control-ring-container #control-ring  {
-    visibility:hidden;
+    visibility:hidden;//透明度为0的话，就不需要hidden
     transition: visibility 1s 0.5s, opacity 1s 0.5s;
     -moz-transition: visibility 1s 0.5s, opacity 1s 0.5s;
     -webkit-transition: visibility 1s 0.5s, opacity 1s 0.5s;
@@ -43,7 +43,7 @@ div#button:hover {
     background-position: center;
 }
 div#button #info-bar .info {
-    width: 130px;
+    width: 130px;//这里的半径应该设成很小的情况，最好跟a+图标的大小一致这样transition变化的时候才会由小变大
     height: 130px;
     -moz-border-radius: 65px;
     -webkit-border-radius: 65px;
@@ -181,7 +181,7 @@ div#button:hover #control-ring-container #control-ring {
     opacity: 1;
     height: auto;
 }
-div#button:hover #control-ring-container #control-ring li.mask {
+div#button:hover #control-ring-container #control-ring li.mask {//从这里开始往下的5个li需要注意下定位
     transform: translate(-60px, -40px);
     -moz-transform: translate(-60px, -40px);
     -webkit-transform: translate(-60px, -40px);
