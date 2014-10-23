@@ -89,8 +89,9 @@
 	-moz-border-radius: 15px; 
 	-webkit-border-radius: 15px; 
 	border-radius: 15px;
-	position: relative;
+	position: absolute;
 	left: 10px;
+	top: 0px;
 }
 #button:hover .mask{
 	visibility: visible;
@@ -107,6 +108,9 @@
 	-moz-border-radius: 15px; 
 	-webkit-border-radius: 15px; 
 	border-radius: 15px; 
+	position: absolute;
+	left: 0px;
+	top: 30px;
 }
 #button:hover .history{
 	visibility: visible;
@@ -124,8 +128,9 @@
 	-moz-border-radius: 15px; 
 	-webkit-border-radius: 15px; 
 	border-radius: 15px;
-	position: relative;
+	position: absolute;
 	left: 10px;
+	top: 60px;
 }
 #button:hover .message{
 	visibility: visible;
@@ -145,11 +150,12 @@
 	border-radius: 10px; 
 	text-align: center;
 	font-size: 18px;
-	position: relative;
-	right: 10px;
-	bottom: 15px;
+	position: absolute;
+	left: 28px;
+	top: 52px;
 }
 #button:hover .setting_button{
+	display: inline-block;
 	visibility: visible;
 	width: 30px; 
 	height: 30px; 
@@ -157,9 +163,9 @@
 	-moz-border-radius: 15px; 
 	-webkit-border-radius: 15px; 
 	border-radius: 15px;
-	position: relative;
-	right: -39px;
-	bottom: 15px;
+	position: absolute;
+	left: 40px;
+	top: 78px;
 }
 #button:hover .setting{
 	visibility: visible;
@@ -169,6 +175,7 @@
 	width: 24px;
 }
 #button:hover .sign_button{
+	display: inline-block;
 	visibility: visible;
 	width: 30px; 
 	height: 30px; 
@@ -176,9 +183,9 @@
 	-moz-border-radius: 15px; 
 	-webkit-border-radius: 15px; 
 	border-radius: 15px; 
-	position: relative;
-	right: -71px;
-	bottom: 48px;
+	position: absolute;
+	left: 73px;
+	top: 74px;
 }
 #button:hover .signin{
 	visibility: visible;
@@ -188,12 +195,6 @@
 	width: 24px;
 }
 
-
-
-
-
-
-
 #button{
 	width: 30px; 
 	height: 30px; 
@@ -201,17 +202,18 @@
 	-webkit-border-radius: 15px; 
 	border-radius: 15px;	
 	margin: 305px 185px 65px 185px;
-	background-image: url('assets/images/atplus_green.png');
+	background-image: url('assets/images/atplus_white.png');
 	background-repeat: no-repeat;
-	background-size: 70%;
+	background-size: 85%;
 	background-position: center;
-	background-color: rgba(128, 138, 135, 1);
-	transition: width 1s, height 1s, border-radius 1s, margin 1s, background-size 1s;
-	-moz-transition: width 1s, height 1s, border-radius 1s, margin 1s, background-size 1s;
-	-webkit-transition: width 1s, height 1s, border-radius 1s, margin 1s, background-size 1s;
-	-o-transition: width 1s, height 1s, border-radius 1s, margin 1s, background-size 1s;
+	background-color: rgba(135, 206, 235, 1);
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 #info-bar{
+	visibility: hidden;
 	width: 2px; 
 	height: 2px; 
 	background-color: rgba(105, 105, 105, 0.6); 
@@ -221,138 +223,157 @@
 	position: relative;
 	top: 14px;
 	left: 14px;
-	transition: width 1s, height 1s, top 1s, left 1s;
-	-moz-transition: width 1s, height 1s, top 1s, left 1s;
-	-webkit-transition: width 1s, height 1s, top 1s, left 1s;
-	-o-transition: width 1s, height 1s, top 1s, left 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 #control-ring-container{
+	visibility: hidden;
 	width: 2px; 
 	height: 2px; 
 	position: relative;
 	top: 12px;
 	left: 14px;
-	transition: width 1s, height 1s, top 1s, left 1s;
-	-moz-transition: width 1s, height 1s, top 1s, left 1s;
-	-webkit-transition: width 1s, height 1s, top 1s, left 1s;
-	-o-transition: width 1s, height 1s, top 1s, left 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .info{
+	visibility: hidden;
 	width: 2px; 
 	height: 2px;
 	margin: auto;
 	position: relative;
 	top: 0px;
-	transition: width 1s, height 1s, top 1s;
-	-moz-transition: width 1s, height 1s, top 1s;
-	-webkit-transition: width 1s, height 1s, top 1s;
-	-o-transition: width 1s, height 1s, top 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .people{
+	visibility: hidden;
 	width: 0px;
-	transition: width 1s;
-	-moz-transition: width 1s;
-	-webkit-transition: width 1s;
-	-o-transition: width 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .numofp{
+	visibility: hidden;
 	font-size: 0px;
-	transition: font-size 1s;
-	-moz-transition: font-size 1s;
-	-webkit-transition: font-size 1s;
-	-o-transition: font-size 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .comment{
+	visibility: hidden;
 	width: 0px;
-	transition: width 1s;
-	-moz-transition: width 1s;
-	-webkit-transition: width 1s;
-	-o-transition: width 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .numofc{
+	visibility: hidden;
 	font-size: 0px;
-	transition: font-size 1s;
-	-moz-transition: font-size 1s;
-	-webkit-transition: font-size 1s;
-	-o-transition: font-size 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .post{
+	visibility: hidden;
 	width: 0px;
-	transition: width 1s;
-	-moz-transition: width 1s;
-	-webkit-transition: width 1s;
-	-o-transition: width 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .numofpost{
+	visibility: hidden;
 	color: #079E6E;
 	font-weight: bold;
 	font-size: 0px;
-	transition: font-size 1s;
-	-moz-transition: font-size 1s;
-	-webkit-transition: font-size 1s;
-	-o-transition: font-size 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .like{
+	visibility: hidden;
 	width: 0px;
-	transition: width 1s;
-	-moz-transition: width 1s;
-	-webkit-transition: width 1s;
-	-o-transition: width 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .numofl{
+	visibility: hidden;
 	color: #079E6E;
 	font-weight: bold;
 	font-size: 0px;
-	transition: font-size 1s;
-	-moz-transition: font-size 1s;
-	-webkit-transition: font-size 1s;
-	-o-transition: font-size 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .mask_button{
+	visibility: hidden;
 	width: 0px; 
 	height: 0px; 
 	background-color: rgba(105, 105, 105, 0.6); 
 	-moz-border-radius: 15px; 
 	-webkit-border-radius: 15px; 
 	border-radius: 15px;
-	position: relative;
+	position: absolute;
+	left: 0px;
 	top: 0px;
-	transition: width 1s, height 1s, top 1s;
-	-moz-transition: width 1s, height 1s, top 1s;
-	-webkit-transition: width 1s, height 1s, top 1s;
-	-o-transition: width 1s, height 1s, top 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .mask{
+	visibility: hidden;
 	position: relative;
 	right: 0px;
 	width: 0px;
-	transition: width 1s, right 1s, bottom 1s;
-	-moz-transition: width 1s, right 1s, bottom 1s;
-	-webkit-transition: width 1s, right 1s, bottom 1s;
-	-o-transition: width 1s, right 1s, bottom 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .history_button{
+	visibility: hidden;
 	width: 0px; 
 	height: 0px; 
 	background-color: rgba(105, 105, 105, 0.6); 
 	-moz-border-radius: 15px; 
 	-webkit-border-radius: 15px; 
 	border-radius: 15px; 
-	transition: width 1s, height 1s;
-	-moz-transition: width 1s, height 1s;
-	-webkit-transition: width 1s, height 1s;
-	-o-transition: width 1s, height 1s;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .history{
-	position: relative;
-	right: 0px;
+	visibility: hidden;
 	width: 0px;
-	transition: width 1s, right 1s, bottom 1s;
-	-moz-transition: width 1s, right 1s, bottom 1s;
-	-webkit-transition: width 1s, right 1s, bottom 1s;
-	-o-transition: width 1s, right 1s, bottom 1s;
+	position: relative;
+	bottom: 0px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .message_button{
+	visibility: hidden;
 	display: inline-block;
 	width: 0px; 
 	height: 0px; 
@@ -360,23 +381,26 @@
 	-moz-border-radius: 15px; 
 	-webkit-border-radius: 15px; 
 	border-radius: 15px;
-	position: relative;
-	left: 10px;
-	transition: width 1s, height 1s, left 1s;
-	-moz-transition: width 1s, height 1s, left 1s;
-	-webkit-transition: width 1s, height 1s, left 1s;
-	-o-transition: width 1s, height 1s, left 1s;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .message{
+	visibility: hidden;
 	width: 0px;
 	position: relative;
 	bottom: 0px;
-	transition: width 1s, bottom 1s;
-	-moz-transition: width 1s, bottom 1s;
-	-webkit-transition: width 1s, bottom 1s;
-	-o-transition: width 1s, bottom 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .unread{
+	visibility: hidden;
 	display: inline-block;
 	width: 0px;
 	height: 0px;
@@ -386,56 +410,64 @@
 	border-radius: 10px; 
 	text-align: center;
 	font-size: 0px;
-	position: relative;
-	right: 0px;
-	transition: width 1s, height 1s, right 1s, bottom 1s, font-size 1s;
-	-moz-transition: width 1s, height 1s, right 1s, bottom 1s, font-size 1s;
-	-webkit-transition: width 1s, height 1s, right 1s, bottom 1s, font-size 1s;
-	-o-transition: width 1s, height 1s, right 1s, bottom 1s, font-size 1s;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .setting_button{
+	visibility: hidden;
 	width: 0px; 
 	height: 0px; 
 	background-color: rgba(105, 105, 105, 0.6); 
 	-moz-border-radius: 15px; 
 	-webkit-border-radius: 15px; 
 	border-radius: 15px;
-	position: relative;
-	right: 0px;
-	transition: width 1s, height 1s, right 1s, bottom 1s;
-	-moz-transition: width 1s, height 1s, right 1s, bottom 1s;
-	-webkit-transition: width 1s, height 1s, right 1s, bottom 1s;
-	-o-transition: width 1s, height 1s, right 1s, bottom 1s;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .setting{
+	visibility: hidden;
 	width: 0px;
 	position: relative;
 	right: 0px;
-	transition: width 1s, right 1s, bottom 1s;
-	-moz-transition: width 1s, right 1s, bottom 1s;
-	-webkit-transition: width 1s, right 1s, bottom 1s;
-	-o-transition: width 1s, right 1s, bottom 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 .sign_button{
+	visibility: hidden;
 	width: 0px; 
 	height: 0px; 
 	background-color: rgba(105, 105, 105, 0.6); 
 	-moz-border-radius: 15px; 
 	-webkit-border-radius: 15px; 
 	border-radius: 15px;
-	position: relative;
-	right: 0px;
-	transition: width 1s, height 1s, right 1s, bottom 1s;
-	-moz-transition: width 1s, height 1s, right 1s, bottom 1s;
-	-webkit-transition: width 1s, height 1s, right 1s, bottom 1s;
-	-o-transition: width 1s, height 1s, right 1s, bottom 1s;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
+
 .signin{
+	visibility: hidden;
 	width: 0px;
 	position: relative;
 	right: 0px;
-	transition: width 1s, right 1s, bottom 1s;
-	-moz-transition: width 1s, right 1s, bottom 1s;
-	-webkit-transition: width 1s, right 1s, bottom 1s;
-	-o-transition: width 1s, right 1s, bottom 1s;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }

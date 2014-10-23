@@ -1,0 +1,206 @@
+
+#at-plus-container {
+	position: absolute;
+	bottom:0px;
+    left:0;
+    right:0;
+}
+#bottom-positioner {
+	position: relative;
+	width: 140px;
+    margin: auto;
+	height: 240px;
+}
+#button {
+	width: 140px;
+}
+#info-bar {
+	position: absolute;
+	left: 58px;
+	top: 123px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: rgba(100, 100, 100, 1);
+    overflow: hidden;
+    transition-property: width, height top left;
+    transition-duration:0.5s;
+    //transition-delay: 0.3s;
+}
+
+#button:hover #info-bar{
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 20px;
+}
+li {
+	list-style-type: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+#control-ring-container {
+	position: absolute;
+	top: 104px;
+	left: 15px;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 0.5s;
+	//transition-delay: 0.3s;
+}
+#button:hover #control-ring-container {
+    opacity: 1;
+}
+
+li.mask {
+	left:40px;
+	top:15px;
+	transition-property: left top;
+	transition-duration: 0.5s;
+	//transition-delay: 0.3s;
+}
+#button:hover li.mask {
+	left: -8px;
+	top: -12px;
+}
+li.history {
+	left:40px;
+	top:15px;
+	transition-property: left top;
+	transition-duration: 0.5s;
+	//transition-delay: 0.3s;
+}
+#button:hover li.history {
+	left: -15px;
+	top: 20px;
+}
+li.message {
+	left:40px;
+	top:15px;
+	transition-property: left top;
+	transition-duration: 0.5s;
+	//transition-delay: 0.3s;
+}
+#button:hover li.message {
+	left: -6px;
+	top: 52px;
+}
+li.setting {
+	left:40px;
+	top:15px;
+	transition-property: left top;
+	transition-duration: 0.5s;
+	//transition-delay: 0.3s;
+}
+#button:hover li.setting {
+	left: 25px;
+	top: 68px;
+}
+li.sign {
+	left:40px;
+	top:15px;
+	transition-property: left top;
+	transition-duration: 0.5s;
+	//transition-delay: 0.3s;
+}
+#button:hover li.sign {
+	left: 60px;
+	top: 64px;
+}
+#control-ring li{
+	position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(48, 48, 48, 1);
+}
+div.apb {
+	position: absolute;
+	top: 120px;
+	left: 55px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: rgba(195, 195, 195, 1);
+	transition-property: width, height	top left background-color;
+	transition-duration: 0.3s;
+	//transition-delay: 0.3s;
+	display: flex;
+}
+#button:hover div.apb{
+    width: 50px;
+    height: 50px;
+    top: 110px;
+    left: 45px;
+    background-color: rgba(48, 63, 159, 1);
+}
+
+span.unread {
+	font-size: 50%;
+	text-align: center;
+	color: white;
+	width: 12px;
+	height: 12px;
+	border-radius: 7px;
+	background-color: red;
+	position: absolute;
+	right: 0px;
+}
+#control-ring li {
+	display: flex;
+}
+#control-ring li img {
+	margin: auto;
+	width: 50%;
+	height: 50%
+}
+div.icon {
+	width: 30px;
+	height: 30px;
+	background-image: url("assets/images/atplus_white.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	transition-property: background-image width height;
+	transition-duration: 0.5s;
+	//transition-delay: 0.3s;
+}
+#button:hover div.icon {
+	width: 50px;
+	height: 50px;
+	background-image: url("assets/images/atplus_green.png");
+	background-size: 80%;
+}
+div.info ul {
+	position: absolute;
+	top: -10px;
+	left: -20px;
+}
+li.page.user {
+	position: relative;
+	top:-5px;
+	left:10px;
+}
+li.page.comment {
+    position: relative;
+    width:100px; 
+    left:0px;
+    top:-5px;
+    font-size:30px;
+    font-style: bold;
+}
+li.page.comment img {
+	width: 35%;
+}
+li.mine.posted {
+    position: relative;
+    top: -8px;
+    left: -5px;
+    color:#079E6E;
+}
+li.mine.like {
+	position: relative;
+	left:30px;
+	top: -37px;
+	color:#079E6E;
+}
