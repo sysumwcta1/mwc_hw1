@@ -1,0 +1,194 @@
+// use for CSS3
+@mixin css3($property, $value) {
+    @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+        #{$prefix}#{$property}: $value;
+    }
+}
+@mixin setposition($property,$left,$top) {
+	position: $property;
+	left: $left;
+	top: $top;
+}
+//common variable for position,size and color
+$iconSize: 35px;
+$iconColor: #999fd3;
+$bigIconSize: 80px;
+
+$bottomPosition: 100px;
+$time: .3s;
+
+//common style 
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Microsoft YaHei";
+	text-align:center;
+}
+ul {
+	list-style: none;
+}
+.apb {
+	background: url(../../assets/images/atplus_white.png) no-repeat center;
+	background-color: $iconColor;
+	position: absolute;
+	left: 50%;
+	width:$iconSize;
+	height: $iconSize;
+	margin-left: - (1/2) * $iconSize;
+	bottom: $bottomPosition;
+	@include css3(border-radius,50%);
+	@include css3(transition,all $time);
+}
+//when the mouse is on the button
+#button {
+	cursor: pointer;
+}
+#button:hover {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	bottom: 0px;
+	.apb {
+		background: url(../../assets/images/atplus_green.png) no-repeat center;
+		width: $bigIconSize;
+		height: $bigIconSize;
+		bottom:  $bottomPosition - ($bigIconSize - $iconSize) / 2;
+		margin-left: - (1/2) * $bigIconSize;
+		background-color: rgba(48, 63, 159, 1);
+	}
+	#info-bar {
+		width: 130px;
+		height: 130px;
+		bottom: $bottomPosition + 65px;
+		margin-left: -65px;
+		@include css3(transition,all $time);
+	}
+	#control-ring-container {
+		opacity: 1;
+		@include css3(transition,all $time);
+	}
+	#control-ring li {
+		opacity: 1;
+		@include css3(transition,all $time);
+	}
+	.mask {
+		margin-left: -105px;
+		bottom: $bottomPosition + 45px;
+	}
+	.history {
+		margin-left: -101px;
+		bottom: $bottomPosition - 5px;
+	}
+	.message {
+		margin-left: -76px;
+		bottom:$bottomPosition - 50px;
+	}
+	.setting {
+		margin-left: -27px;
+		bottom: $bottomPosition - 70px;
+	}
+	.sign {
+		margin-left: 30px;
+		bottom: $bottomPosition - 60px;
+	}
+}
+
+#info-bar {
+	width: 0px;
+	height:0px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	bottom: $bottomPosition;
+	background-color: #7e7e7e;
+	@include css3(border-radius, 50%);
+	@include css3(transition,all $time);
+	.info {
+		height: 100%;
+	}
+	ul {
+		height: 100%;
+		li {
+			position: relative;
+		}
+	}
+	.page {
+		color: #fff;
+		font-weight: bold;
+		height: 33%;
+		@at-root.user {
+			img {
+				@include setposition(absolute,35px,10px);
+			}
+			span {
+				@include setposition(absolute,65px,7px);
+			}
+		}
+		@at-root.comment {
+			font-size: 29px;
+			img {
+				@include setposition(absolute,25px,10px);
+			}
+			span {
+				@include setposition(absolute,60px,0px);
+			}
+		}
+	}
+	.mine {
+		display: block;
+		width: 50%;
+		height: 33%;
+		float: left;
+		color: #079E6E;
+		font-size: 17px;
+		font-weight: bold;	
+		@at-root.posted {
+			img {
+				@include setposition(absolute,21px,0px);
+			}
+			span {
+				@include setposition(absolute,50px,-3px);
+			}
+		}
+		@at-root.like {
+			img {
+				@include setposition(absolute,0px,0px);
+			}
+			span {
+				@include setposition(absolute,30px,-3px);
+			}
+		}
+	}
+}
+#control-ring-container {
+	li {
+		width: $iconSize;
+		height: $iconSize;
+		background-color: $iconColor;
+		border-radius: 50%;
+		position: absolute;
+		left:50%;
+		bottom: $bottomPosition;
+		margin-left: - (1/2) * $iconSize;
+		opacity: 0;
+		@include css3(transition,all $time);
+		img {
+			margin-top: 5px;
+		}
+	}
+	li .unread {
+		display: block;
+		width: 20px;
+		height: 20px;
+		@include css3(border-radius,50%);
+		background-color:red;
+		position: absolute;
+		top: -5px;
+		right: -3px;
+		color: #fff;
+	}
+}
