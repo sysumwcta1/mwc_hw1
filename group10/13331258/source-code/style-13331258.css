@@ -1,0 +1,303 @@
+/*@+图标效果html文件的样式表*/
+/*wangxuecan 13331258*/
+
+
+
+/*元素初始属性设置*/
+
+
+
+/*部分元素的透明度与绝对定位*/
+.info,.button,.iconblue{
+	opacity: 0;
+}
+.info,.info ul,.button img,.button,.unread,.icon,.icon img,.iconblue,.iconblue img,#bottom-positioner,#button,#button-change,#info-bar,#control-ring-container,#control-ring,.apb{
+	position: absolute;
+}
+
+
+/*info部分*/
+.info {
+	display:block;
+	width: 130px;
+	height: 130px;
+	border-radius: 65px;	/*圆形*/
+	-webkit-border-radius: 65px;	/* Safari 和 Chrome */ 
+	-moz-border-radius: 65px;	/*Firefox*/
+	transform: scale(0.1,0.1);	/*按出现后的大小设计元素，而后缩小到十分一作为初始状态*/
+	-webkit-transform: scale(0.1,0.1);	/* Safari 和 Chrome */
+	-ms-transform: scale(0.1,0.1); 	/* IE 9 */
+	-moz-transform:scale(0.1,0.1);	/* Firefox */
+	background-color: rgba(105, 105, 105, 0.8);	/*浅灰色*/
+	top: -65px;/*绝对定位于#info-bar*/
+	left: -49px;
+}
+
+.info ul li {
+	position: relative;
+}
+
+.user span {
+	color: white;
+	margin-left: 12%;
+	font-family: Arial;
+	font-size: 120%;
+	vertical-align: top;
+}
+.info .user {
+	left: 0px;
+	top: -5px;
+}
+.info .comment {
+	left:0px;
+	top: 0px;
+}
+.comment span {
+	color: white;
+	margin-left: 12px;
+	font-size: 200%;
+	font-family: Arial;
+	font-weight: bold;
+}
+.info .posted {
+	left: -13px;
+	top: 5px;
+}
+.posted span {
+	color: #079E6E;
+	font-size: 120%;
+	font-weight: bold;
+	font-family: Arial;
+	margin-left: 5px;
+	vertical-align: top;
+}
+.info .like {
+	left: 32px;
+	top: -20px;
+}
+.like span {
+	color: #079E6E;
+	font-size: 120%;
+	font-weight: bold;
+	font-family: Arial;
+	margin-left: 5px;
+	vertical-align: top;
+}
+ul {
+	list-style-type: none;
+}
+
+
+/*button部分*/
+.button { 
+	width: 36px; 
+	height: 36px; 
+	background-color: rgba(105, 105, 105, 0.8); 
+	border-radius: 18px;	/*圆形*/
+	-webkit-border-radius: 18px; 
+	-moz-border-radius: 18px;
+	top: 0px;	/*绝对定位于control-ring*/
+	left: 0px;
+} 
+.button img{
+	top: 7px;
+	left: 7px;
+}
+.unread{
+	width: 20px; 
+	height: 20px; 
+	line-height: 20px;
+	background-color: rgba(255, 0, 0, 0.8); 
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px;
+	top: -6px;
+	right: -6px;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 8px;
+	color: white;
+	text-align: center;
+	z-index: 1;		/*使角标出现在button上不被遮挡*/
+}
+
+
+/*icon部分*/
+.icon{
+	width: 32px; 
+	height: 32px; 
+	background-color: rgba(105, 105, 105, 0.6); 
+	-webkit-border-radius: 16px; 
+	-moz-border-radius: 16px;
+	opacity: 0.8;
+	z-index: 10;	/*使@+不被任何部件遮挡*/
+}
+.icon img{
+	top: 6px;
+	left: 2px;
+}
+.iconblue{
+	width: 32px; 
+	height: 32px; 
+	background-color: rgba(48, 63, 159, 1);
+	-webkit-border-radius: 16px; 
+	-moz-border-radius: 16px;
+	z-index: 10;
+}
+.iconblue img{
+	top: 6px;
+	left: 2px;
+	height: 20px;
+	width: 28px;
+}
+
+/*当info或者哪个button被hover时，会有颜色变化提示用户*/
+.info:hover,.button:hover {
+	background-color: rgba(0, 255, 255, 0.6);
+}
+
+
+
+
+/*主要用于定位的div们*/
+
+/*找到浏览器底部的中心*/
+#at-plus-container{
+	position: fixed;
+	bottom: 100px;
+	left: 50%;
+	height: 10px;
+	width: 10px;
+}
+/*大范围基本定位框，包含所有图标出现的区间*/
+#bottom-positioner{
+	height: 400px;
+	width: 400px;
+	top: -200px;
+	left: -200px;
+}
+/*用于感应hover变化的div，初始状态与@+图标一样大并重合*/
+#button{
+	height: 32px;
+	width: 32px;
+	border-radius: 16px;
+	margin: 184px;
+}
+#control-ring{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+/*白色@+图标被hover后的变化*/
+
+/*感应框范围扩大至能装下变化后的所有元素，以使hover状态能够当鼠标在各图标间活动时保持*/
+#button:hover{
+	height: 300px;
+	width: 300px;
+	margin: 50px;
+	border-radius: 150px;
+}
+/*所有图标相对于此定位,此相对于#button定位，由于#button的变化须重新改变定位*/
+#button:hover #button-change{
+	left: 134px;
+	top: 134px;
+}
+/*info变大，飞出，呈现颜色*/
+#button:hover .info{
+	transform: scale(1,1);
+	-webkit-transform: scale(1,1);  /* Safari 和 Chrome */
+	-ms-transform: scale(1,1); 	/* IE 9 */
+	-moz-transform:scale(1,1);	/* Firefox */
+	top: -150px;
+	opacity: 0.9;
+}
+/*一群hover飞向不同位置，并变不透明*/
+#button:hover .button{
+	opacity: 0.9;
+}
+#button:hover .mask{
+	top: -45px;
+	left: -70px;
+}
+#button:hover .history{
+	left: -80px;
+}
+#button:hover .message{
+	top: 45px;
+	left: -60px;
+}
+#button:hover .setting{
+	top: 70px;
+	left: -15px;
+}
+#button:hover .sign{
+	top: 60px;
+	left: 35px;
+}
+/*蓝色@+呈现并变大*/
+#button:hover .iconblue{
+	opacity: 1;
+	transform: scale(1.7,1.7);
+	-webkit-transform: scale(1.7,1.7);  /* Safari 和 Chrome */
+	-ms-transform: scale(1.7,1.7); 	/* IE 9 */
+	-moz-transform:scale(1.7,1.7);	/* Firefox */
+}
+/*白色@+变透明*/
+#button:hover .icon{
+	opacity: 0;
+}
+
+
+
+/*所有transition属性的设置，每个图标与属性均有差异化设置，具体解释略繁琐，看效果即可*/
+#info-bar{
+	transition: top 1.3s;
+}
+.info{
+	transition: transform 1.3s;
+}
+
+.iconblue{
+	transition: transform 1.3s;
+}
+
+.iconblue,.icon{
+	transition: transform 1.3s, top 1.3s, left 1.3s, opacity 1.3s;
+}
+.info{
+	transition: opacity 1.3s 0.2s, transform 1s,  top 1s cubic-bezier(.35,.03,.46,2.3);
+}
+
+.mask{
+	transition: top 1s cubic-bezier(.35,.03,.46,1.81) 0.1s , left 1s cubic-bezier(.35,.03,.46,1.81) 0.1s, opacity 1.3s  0.3s ;
+}
+.history{
+	transition: top 1s cubic-bezier(.35,.03,.46,1.81) 0.2s, left 1s cubic-bezier(.35,.03,.46,1.81) 0.2s, opacity 1.3s  0.4s;
+}
+.message{
+	transition: top 1s cubic-bezier(.35,.03,.46,1.81) 0.3s, left 1s cubic-bezier(.35,.03,.46,1.81) 0.3s, opacity 1.3s  0.5s;
+}
+.setting{
+	transition: top 1s cubic-bezier(.35,.03,.46,1.81) 0.4s, left 1s cubic-bezier(.35,.03,.46,1.81) 0.4s, opacity 1.3s  0.6s;
+}
+.sign{
+	transition: top 1s cubic-bezier(.35,.03,.46,1.81) 0.5s, left 1s cubic-bezier(.35,.03,.46,1.81) 0.5s, opacity 1.3s  0.7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

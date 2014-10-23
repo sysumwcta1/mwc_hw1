@@ -19,6 +19,7 @@
 	left: 5px;
 	top: 5px;
 	z-index: 1;
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
 
@@ -36,7 +37,9 @@
 	top: -19px;
 	visibility: hidden;
 	z-index: -1;
+	-webkit-transform: scale(0.37,0.37);
 	transform: scale(0.37,0.37);
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
 
@@ -45,13 +48,16 @@
 	height: 136px;
 	border-radius: 50%;
 	overflow: hidden;
+	background-color: rgba(0,0,0,0.6);
 	color: #FFF;
 	text-align: center;
 	position: absolute;
 	left: -43px;
 	top: -43px;
 	visibility: hidden;
+	-webkit-transform: scale(0.01,0.01);
 	transform: scale(0.01,0.01);
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	z-index: -1;
 }
@@ -67,62 +73,71 @@
 	top: 4px;
 	left: 4px;
 	visibility: hidden;
-	transform: scale(0.01,0.01);
+	-webkit-transform: scale(1,1);
+	transform: scale(1,1);
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	z-index: -1;
 }
 
 #container:hover .apb {
 	z-index: -1;
+	-webkit-transform: scale(2,2);
 	transform: scale(2,2);
 	background-color: rgba(48, 63, 159, 0);
 	visibility: hidden;
 }
 
-#container:hover .api{
+#container:hover .api {
 	z-index: 1;
 	background-color: rgba(48, 63, 159, 1);
+	-webkit-transform: scale(1,1);
 	transform: scale(1,1);
 	visibility: visible;
 }
 
 
 
-#container:hover .info{
+#container:hover .info {
 	visibility: visible;
+	-webkit-transform: scale(1,1);
 	transform: scale(1,1);
 	top: -170px;
-	background-color: rgba(0,0,0,0.6);
 }
 
 #container:hover .button {
 	visibility: visible;
+	-webkit-transition: 0.5s;
 	transform: scale(1,1);
 	background-color: rgba(0,0,0,0.6);
 }
-#container:hover .mask{
+#container:hover .mask {
 	top: -50px;
 	left: -70px;
 }
 
-#container:hover .history{
+#container:hover .history {
 	top: 0px;
 	left: -100px;
 }
 
-#container:hover .message{
+#container:hover .message {
 	top: 50px;
 	left: -72px;
 }
 
-#container:hover .setting{
+#container:hover .setting {
 	top: 90px;
 	left: -20px;
 }
 
-#container:hover .sign{
+#container:hover .sign {
 	top: 80px;
 	left: 40px;
+}
+
+#container:hover .unread {
+	background-color: rgba(230,10,10,1);
 }
 
 .user {
@@ -153,8 +168,10 @@
 	top: -5px;
 	text-align: center;
 	position: absolute;
-	background-color: red;
+	background-color: rgba(230,10,10,0);
 	border-radius: 50%;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
 }
 
 body {
