@@ -1,3 +1,5 @@
+/*没有实现动画功能， 建议：在cursor hover的时候进行一些，改变的改变的操作就可以实现动画效果了， 刚开始的是那些东西图标是隐藏在@下面
+的可以调节，透明度来实现他们的隐藏和展现。，如：#at-plus-container:hover .comment {},位置尽量用absolute， */
 body {
 	background-color: white;
 }
