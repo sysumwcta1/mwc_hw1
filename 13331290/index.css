@@ -1,0 +1,162 @@
+ul {
+    list-style-type: none;
+}
+
+#bottom-positioner {
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-image: url("assets/images/atplus_white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -ms-transition: 1s;
+}
+
+#bottom-positioner:hover {
+    background-image: url("assets/images/atplus_green.png");
+    background-color: rgba(48, 63, 159, 1);
+    background-size: 80%;
+    width: 60px;
+    height: 60px;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -o-transition: 0.7s;
+    -ms-transition: 0.7s;
+}
+
+#button {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -o-transition: 0.7s;
+    -ms-transition: 0.7s;
+}
+
+#bottom-positioner:hover #button {
+    width: 200px;
+    height: 200px;
+    bottom: -70px;
+    right: -70px;
+    opacity: 1.0;
+}
+
+#info-bar {
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    bottom: 70%;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+.page img {
+    padding-right: 10px;
+}
+
+.page {
+    color: white;
+    font-weight: 900;
+    position: relative;
+}
+
+.user {
+    font-size: 18px;
+    top: -12px;
+}
+
+.comment {
+    font-size: 30px;
+    left: -5px;
+    top: -5px;
+}
+
+.mine {
+    color: #079E6E;
+    font-weight: 900;
+    font-size: 16px;
+    display: inline;
+    position: relative;
+    bottom: -5px;
+    left: -18px;
+}
+
+.mine img {
+    padding-right: 5px;
+    vertical-align: top;
+}
+
+
+#control-ring-container {
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    width: 18%;
+    height: 18%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: 50%;
+    position: absolute;
+}
+
+.mask {
+    background-image: url("assets/images/nomask.png");
+    bottom: 62%;
+    right: 72%;
+}
+
+.history {
+    background-image: url("assets/images/history.png");
+    bottom: 40%;
+    right: 80%;
+}
+
+.message {
+    background-image: url("assets/images/message.png");
+    bottom: 19%;
+    right: 69%;
+
+}
+
+.setting {
+    background-image: url("assets/images/setting.png");
+    bottom: 7%;
+    right: 47%;
+}
+
+.sign {
+    background-image: url("assets/images/signout.png");
+    bottom: 11%;
+    right: 23%;
+}
+
+.unread {
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    font-size: 13px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: -3px;
+    text-align: center;
+}
